@@ -96,8 +96,13 @@
 -----------------------------------------------------------------
 * 学习笔记
  ```
+    企业开票信息：
+    公司名称：山东科雷普电子科技有限公司
+    税号：91370303MA3MMD2R14
 
-    91370303MA3MMD2R14
+    收件人：王东祥
+    收件电话：133615***01
+    地址：山东省淄博市张店区和平街道南西六路21号淄博市创业孵化中心B705
 
     body > table:nth-child(5) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td > table > tbody > tr > td.Font9 > a
 
