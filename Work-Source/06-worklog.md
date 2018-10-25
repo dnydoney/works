@@ -1,5 +1,52 @@
 
 
+
+
+###  2018年10月25日
+-----------------------------------------------------------------
+* 资料
+  ```
+
+  恭喜你获得本次活动资料，为了奖励你，其他资料免费送：
+
+  【十天学会单片机完整版（100个实例+PPT）】下载链接:https://pan.baidu.com/s/1kQiTJJOA3slADZurzo9lbA​​​ 密码: 4mhr
+
+  【电子技术速成全图解】下载链接: https://pan.baidu.com/s/1eiAinrseVBm6fjK1FeXrow 密码: r1dm
+
+  【各大高校电子技术类视频课程】下载链接:https://pan.baidu.com/s/1i6ftr3v 密码: tnx5
+
+  【汽车电子技术资料】下载链接: https://pan.baidu.com/s/1p_d2Fj83izy42kdXDuryVg 密码: ga8d
+
+  【《电子工程师必备—九大系统电路识图宝典》】下载链接: https://pan.baidu.com/s/1kV838oB 密码: 4iba
+
+  【《电子工程师技术手册》电子书】下载链接: https://pan.baidu.com/s/1qZS4aYg 密码: dnfx
+
+  【《电子工程师必备—元器件应用宝典》】   下载链接: https://pan.baidu.com/s/1eSGNeuA 密码: zi1q
+
+
+
+  ```
+
+
+  * 卓尔电气 工作说明
+  ```
+
+   SELECT * FROM v_dianbiao where 1 = 1 and s_id = '11' and xl_id = '11' and zd_id = '17' and cldh = '001' and gylx in('42')
+   SELECT * FROM mt_sample_37030030 where cldh = '1' and cbsj BETWEEN '2018-10-18 00:00:00' and '2018-10-18 24:00:00'
+
+
+  ```
+
+
+
+
+
+
+
+
+
+
+
 ###  2018年10月24日
 -----------------------------------------------------------------
 * 更换触摸屏
