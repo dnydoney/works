@@ -23,7 +23,8 @@
 
   【《电子工程师必备—元器件应用宝典》】   下载链接: https://pan.baidu.com/s/1eSGNeuA 密码: zi1q
 
-
+  内容介绍：http://www.vipsrc.com/thread-11685-1-1.html
+  下载地址：https://pan.baidu.com/s/1wkNGUi-R5FNEXiFC3c8DXA 提取码: tb3p
 
   ```
 
@@ -33,6 +34,9 @@
 
    SELECT * FROM v_dianbiao where 1 = 1 and s_id = '11' and xl_id = '11' and zd_id = '17' and cldh = '001' and gylx in('42')
    SELECT * FROM mt_sample_37030030 where cldh = '1' and cbsj BETWEEN '2018-10-18 00:00:00' and '2018-10-18 24:00:00'
+
+
+
 
 
   ```
