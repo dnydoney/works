@@ -15,6 +15,7 @@
 		<Item Name="对话框.vi" Type="VI" URL="../对话框.vi"/>
 		<Item Name="控件 2.ctl" Type="VI" URL="../控件 2.ctl"/>
 		<Item Name="控件 3.ctl" Type="VI" URL="../控件 3.ctl"/>
+		<Item Name="数学分析与信号处理.vi" Type="VI" URL="../数学分析与信号处理.vi"/>
 		<Item Name="未命名 2.vi" Type="VI" URL="../未命名 2.vi"/>
 		<Item Name="未命名 3.vi" Type="VI" URL="../未命名 3.vi"/>
 		<Item Name="未命名 5.vi" Type="VI" URL="../未命名 5.vi"/>
