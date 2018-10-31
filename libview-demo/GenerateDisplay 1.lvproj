@@ -14,6 +14,7 @@
 		<Item Name="GenerateDisplay 1.vi" Type="VI" URL="../GenerateDisplay 1.vi"/>
 		<Item Name="未命名 2.vi" Type="VI" URL="../未命名 2.vi"/>
 		<Item Name="未命名 3.vi" Type="VI" URL="../未命名 3.vi"/>
+		<Item Name="未命名 5.vi" Type="VI" URL="../未命名 5.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
