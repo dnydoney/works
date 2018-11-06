@@ -5,6 +5,9 @@
 * LabView学习
 
 
+  Administrator  
+
+
 ###  2018年10月10日
 -----------------------------------------------------------------
 * LabView学习
@@ -112,6 +115,11 @@
 
     齐商银行股份有限公司世纪花园支行营业室
     8011 0870 1421 0125 70
+
+    企业名称：山东科雷普电子科技有限公司
+    纳税人识别号：91370303MA3MMD2R14
+    地址：山东省淄博市张店区南西六路21号淄博市创业孵化中心B楼705号
+    企业注册联系电话
 
     body > table:nth-child(5) > tbody > tr > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(2) > td > table > tbody > tr:nth-child(2) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td > table > tbody > tr > td > table > tbody > tr > td.Font9 > a
 
