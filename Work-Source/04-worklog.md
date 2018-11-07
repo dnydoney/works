@@ -1,6 +1,38 @@
 
 
+###  2018年11月07日
+-----------------------------------------------------------------
+* 北汽连接件
+  ```
+    1. 低压插件应该都是AMP（安普）的，高压插件应该都是Ebusbar（深圳巴斯巴）的
+    2. 编号2的插头，板端和线端：http://www.ebusbar.net/products-168.html  
+    3. 编号4和5是一个整体！板端：https://www.te.com.cn/chn-zh/product-1746979-1.html
+    4. 编号4、线端：https://www.te.com.cn/chn-zh/product-1473247-1.html   https://www.te.com.cn/chn-zh/product-1-368376-1.html
+    5. 编号5、线端：https://www.te.com.cn/chn-zh/product-1473255-1.html   https://www.te.com.cn/chn-zh/product-368383-1.html
+    6. 编号1、线端：https://www.te.com.cn/chn-zh/product-CAT-AM78-CH8172.html?q=&n=41620&d=545421&type=products&samples=N&instock=N
+    7. 编号1、板端：https://www.te.com.cn/chn-zh/product-CAT-AM78-H342.html?c=538086&compatible=776164-1
+    8. 编号3、线端：https://www.te.com.cn/chn-zh/product-AFD56-14-19SN-6117.html    https://www.te.com.cn/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FAFD56-xx-xxP%2FSx_ADM%7FD%7Fpdf%7FEnglish%7FENG_CD_AFD56-xx-xxPXSx_ADM_D.pdf%7FAFD56-14-19SN-6117
+    9. 编号3、板端：https://www.te.com.cn/chn-zh/product-AFD50-14-19SN-6117.html    https://www.te.com.cn/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FAFD50-xx-xxP%2FSx_ADM%7FF%7Fpdf%7FEnglish%7FENG_CD_AFD50-xx-xxPXSx_ADM_F.pdf%7FAFD50-14-19SN-6117
+
+  ```
+
+
+
+| 序号 |           名称                |    联系电话    |         说明          |       回馈情况      |
+| :--: | :----------------------: | :------------: | :-------------------: | :-------------------: |
+|  1   | 编号4和5是一个整体！板端      | (21) 3398 0000 | TE 零件编号 1746979-1 |  |
+|  2   | 编号2的插头，板端和线端       |   HV 4芯2.4mm连接器   |||
+|  3   |       编号4、线端            |                |                       |                       |
+|  4   |                             |                |                       |                       |
+|  5   |                             |                |                       |                       |
+|  6   |                             |                |                       |                       |
+
+
+
+
+
 ###  2018年11月06日
+
 -----------------------------------------------------------------
 * 打汇款
 * 接插件资料
@@ -425,7 +457,7 @@
     4. 招标文件中的技术参数问题？由于各投标公司都想通过提供参数控标，
        故采取不采用任何一家的技术参数为标准，采用比较宽泛的技术参数要求。
     5. 招标时间问题？估计八月中旬发布招标文件，九月十号左右招标。
-    
+
         通过今天下午的沟通交流，我们认为应该尽快拟定开发计划，
     并在八月十五日之前签署我们双方合作协议；石主任想近期参观一下我们的产品研发现场，
     更多的了解我们产品的情况；
@@ -563,7 +595,7 @@
    ```
      协议内容：
          开发内容，开发周期，开发费用。
-    
+
      开发内容：
          整车检测实训台
          驱动系统理实一体
