@@ -1,8 +1,39 @@
 
 
 
+
+###  2019年02月22日
+-----------------------------------------------------------------
+
+try {
+      EventBus.getDefault().register(this);
+  } catch (Exception ex) {
+      ex.printStackTrace();
+      AppException.run(ex);
+  }
+
+
+
+mOrder.setSpeed(tmpSpeed);
+     mOrder.setOrderType(Order.SPEED);
+     EventBus.getDefault().post(new OrderChangedEvent(mOrder));
+
+     Intent intentRunnerService = new Intent(RunnerTaskService.ACTION_PLAY, null, SplashActivity.this, RunnerTaskService.class);
+     startService(intentRunnerService);
+
 ###  2019年01月17日
 -----------------------------------------------------------------
+
+
+http://localhost/aiface/msapi.php?requestData=eyJQYXNzd29yZCI6IjEyMzQ1NiIsIlVzZXJOYW1lIjoibGMiLCJ1aWQiOjAsImFjdCI6ImxvZ2luIn0=
+
+{"Password":"123456","UserName":"lc","uid":0,"act":"login"}
+
+
+山东恩诺信息科技有限公司成立于2009年，专注于电子政务、移动互联网、物联网、云计算、大数据等新技术，服务于“智慧城市”、“智慧警务”、“智慧建筑”、“智慧家庭”等领域。主营业务为：软件研发、APP研发、微信平台研发、系统集成、互联网服务，是通过国家双软认定的软件企业、高新技术企业。目前已经淄博公安系统合作开发智慧警校，云警务智慧办公，淄博市网上公安局，网上公安局子站集群（6区3县+文昌湖），特警支队4G视频取证设，备淄博市公安局首长指挥决策系统，刑侦现场勘验信息平台等十余个项目，同时，与企业深入合作开发物联网+人工智能方面的项目，比如，山东汇款的智能跑步机，山东科汇电力故障检测仪等项目。
+
+
+
 
 
 最近跟朋友沟通的时候，了解到山铝有个项目，最近刚刚启动的，是关于智慧工厂方面，主要关于厂内生产设备远程检测，监控以及生产设备运行数据维护预测，目前应该是中铝国际下面的一个工程信息中心负责实施
