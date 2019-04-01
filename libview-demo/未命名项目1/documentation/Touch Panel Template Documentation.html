@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<title>触摸面板项目</title>
+<style>
+
+<!--
+
+/***************************************************/
+
+/* MINIMAL STYLES */
+
+/* The following section defines styles that every HTML Help project should need. */
+
+
+
+/* Specifies White Background color */
+
+body {background-color:#FFFFFF; font-family:Verdana, sans-serif; font-size:8pt; color: #000000;}
+
+
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+
+P { margin-top:6.00pt; margin-bottom:6.00pt;}
+
+
+
+BR { font-size:4.00pt; }
+
+
+
+/* Use H1 for all topic headings. */
+
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-size:150%; font-weight:bold;  }
+
+
+
+/* Use H2 for second-level headings. */
+
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-size:125%; font-weight:bold;  }
+
+
+
+/* Use H3 for third-level headings. */
+
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* Use H4 for fourth-level headings. */
+
+H4 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+
+H5 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+H6 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+
+
+/* Use the Body style class for normal paragraphs. */
+
+P.Body {  }
+
+
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+
+P.Anchor { font-size:125%;  }
+
+
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+
+P.Indent1 { margin-left:12.00pt; margin-bottom:3.00pt;  }
+
+P.Indent2 { margin-left:24.00pt; margin-bottom:3.00pt;  }
+
+P.Indent3 { margin-left:36.00pt; margin-bottom:3.00pt;  }
+
+P.Indent4 { margin-left:48.00pt; margin-bottom:3.00pt;  }
+
+P.Indent5 { margin-left:60.00pt; margin-bottom:3.00pt;  }
+
+
+
+/* Use the LI style for all list items. */
+
+LI { margin-top:3.00pt; margin-bottom:3.00pt; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+
+OL { margin-left:22.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; list-style-type: decimal; }
+
+
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+
+ol ol {list-style-type:lower-alpha}
+
+ol ol ol {list-style-type:decimal}
+
+ol ol ol ol {list-style-type:lower-alpha}
+
+ol ol ol ol ol {list-style-type:decimal}
+
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+ol ol ol ol ol ol ol {list-style-type:decimal}
+
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+
+OL.EquationNum { margin-left:36.00pt; text-indent:0pt; list-style-type: decimal; }
+
+
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+
+OL.List-abc { margin-left:22.00pt; text-indent:0pt; list-style-type:lower-alpha; }
+
+
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+
+UL { margin-left:22.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; list-style-type: disc; }
+
+
+
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. */
+
+ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul ul ul {list-style-image: none;list-style-type: circle}
+
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+
+ul ul ul ul ul ul ul ul ul{list-style-image: none;list-style-type: circle}
+
+
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+
+UL.List-Box { list-style-image: none;list-style-type: square}
+
+
+
+Table { font-size:100%; }
+
+
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+
+Table.Borderless { border:none; }
+
+
+
+/* Use the Bordered style class for tables that need borders. */
+
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+
+TD { vertical-align:top; padding:3px; }
+
+
+
+/* Use the Bordered style class for table headings and cells in Bordered or Bordered-Wide tables. */
+
+.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; }
+
+
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+
+TD.Icon { width:40px; }
+
+
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+
+TH { font-weight:bold; padding:3px; }
+
+
+
+/* Use the Left-Align style class for table headings and cells that you want to left align instead of center align. */
+
+.Left-Align { text-align:left; }
+
+
+
+/***************************************************/
+
+/* CHARACTER FORMATS */
+
+/* The following section defines character formats that every HTML Help project should need. */
+
+
+
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+
+/* The following section defines character formats that every HTML Help project should need. */
+
+
+
+/* Use the Dark-Red format for warnings or cautions. */
+
+.Dark-Red { color: #800000 }
+
+
+
+/* Use the Monospace format for code or syntax examples. */
+
+.Monospace { font-family: Courier New; font-size: 100%; }
+
+
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+
+.Monospace-Bold { font-family: Courier New; font-weight: bold; font-size: 100%; }
+
+
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+
+.Monospace-Italic { font-family: Courier New; font-style: italic; font-size: 100%; }
+
+
+
+/* small class */
+
+.smallFont { font-size:87.5%; }
+
+
+
+/* Bold class */
+
+.Bold { font-weight: bold; }
+
+
+
+/* Italic class */
+
+.Italic { font-style: italic; }
+
+
+
+/* Use the Platform format to denote a specific platform. */
+
+.Platform { color: #0000FF; font-weight: bold; }
+
+
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+
+.Symbol { font-family: Symbol; }
+
+
+
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+
+.Red-text {color: #FF0000;}
+
+
+
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+
+.Green-Underline {color: #007700; text-decoration : underline;}
+
+
+
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+
+.glossButton { font-size:12px; color:black; }
+
+
+
+/* Use for text sections and hyphenated words that should not break at line wraps */
+
+.nobreak{white-space:nowrap}
+
+
+
+/* Use for template instructions. */
+
+.instructions{color:red; font-style:italic}
+
+
+
+/*Use for words and text sections that do not need to be localized */
+
+.DNL { }
+
+
+
+/* The following styles define the color of links. */
+
+a:link { color: #007700 }
+
+a:visited { color: #7F007F }
+
+a:link:hover { color: #FF0000 }
+
+a:link:active { color: #FF0000 }
+
+
+
+/***************************************************
+
+** Forms */
+
+
+
+form { margin-top:0pt; margin-bottom:3pt; color:black; }
+
+select { font-size:100%; color:black; }
+
+
+
+/*******************************************************
+
+** Margins **
+
+** Use these styles for block-level elements inside tables cells or list items where you do not want extra padding at the top or bottom of a cell. */
+
+.noTopMargin { margin-top:0pt;}
+
+.noBottomMargin { margin-bottom:0pt;}
+
+
+
+/***************************************************
+
+** CODE STYLES **
+
+** The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New;  }
+
+-->
+</style>
+
+</HEAD>
+<body>
+
+<h1>触摸面板项目</h1>
+
+<p class="Body">LabVIEW 2015</p>
+<p class="Body">触摸面板项目模板提供创建LabVIEW触摸面板应用程序的起始点，此类应用程序针对NI触摸面板设备。本模板的设计有助于用户轻松开始触摸面板项目。</p>
+
+<p class="Body">该模板的桌面主程序VI基于队列消息处理器(QMH)模板。关于如何使用该设计模式的详细信息，见QMH模板的相关文档。</p><a name="system_req"></a><h2>系统要求</h2><ul><li>LabVIEW专业版开发系统和应用程序生成器</li>
+<li>NI触摸面板设备：NI TPC-2206、NI-TPC 2212、NI TPC-2215,、NI TPC-2230</li></ul><h2>概述</h2>
+
+<p class="Body">触摸面板项目模板包含一个触摸面板主程序VI和一个桌面主程序VI。这些VI使用共享变量通信。下图为模板的架构示意图。每个VI及其通信架构描述如下。</p><img src="loc_tp_template_architecture_diagram.gif"><h3>触摸面板主程序VI（触摸面板终端）</h3>
+<p class="Body">触摸面板主程序VI的前面板使用选项卡控件对输入控件和显示控件进行逻辑分组。用户可根据应用程序需求添加输入控件和显示控件至每个选项卡。</p>
+
+<p class="Body">触摸面板主程序VI基于事件处理器架构。在事件结构的超时分支中，终端读取共享变量<strong>数据</strong>和<strong>预警</strong>，并分别更新显示控件<strong>数据</strong>和<strong>预警&lt;替换该项&gt;</strong>。在<strong>缩放&lt;替换该项&gt;</strong>分支中，当用户修改<strong>缩放&lt;替换该项&gt;</strong>控件时，控件将触发一个更新共享变量事件。桌面主程序VI读取该事件。</p>
+
+<h3>桌面主程序VI（主机）</h3>
+<p class="Body">桌面主程序VI架构基于队列消息处理器(QMH)模板。关于QMH架构的详细信息，见QMH模板的相关文档。</p>
+
+<p class="Body">桌面主程序VI的主要功能是生成、处理和发送数据。信号生成和信号处理发生在事件结构（位于事件处理循环）的&ldquo;超时&#8221;分支中。随机数生成器生成数据，并根据触摸面板主程序VI中指定的换算值进行换算。换算后的数据通过消息队列库发送至消息处理循环。</p>
+
+<p class="Body">在消息处理循环的&ldquo;发生数据&#8221;分支中，主机从事件处理循环处理数据。该值通过&ldquo;数据&#8221;共享变量传输至终端。同时还将该数据与<strong>警告阈值&lt;替换该项&gt;</strong>控件进行比较，然后将预警状态写入由终端读取的&ldquo;预警&#8221;共享变量。</p>
+
+<h2>运行本模板</h2>
+
+<ol>
+<li>在<strong>项目浏览器</strong>窗口中<strong>我的电脑</strong>下打开并运行Desktop Main.vi。</li>
+<li>在触摸面板终端下，打开和运行Touch Panel Main.vi。在过程控制选项卡上，指定<strong>缩放&lt;替换该项&gt;</strong>控件。注意触摸面板设备上的Touch Panel Main.vi正在运行。</li>
+<li>在主机上切换至Desktop Main.vi并指定<strong>警告阈值&lt;替换该项&gt;</strong>控件的值。观察Touch Panel Main.vi各个选项卡显示控件显示的数据对应于Desktop Main.vi的数据。</li>
+</ol>
+
+<h2>修改本模板</h2>
+
+<p class="Body">触摸面板项目模板演示了基本功能和通信策略。用户可根据应用程序的实际需求修改本模板的下列元素。</p>
+
+<h3>触摸面板主程序VI（触摸面板终端）</h3>
+<h4>前面板</h4>
+<p class="Body">用户可删除或重命名标有<span class="Monospace-Bold">&lt;替换该项&gt;</span>的控件，还可添加自定义的控件至选项卡控件。根据应用程序的实际分组需求，可能需要重命名选项卡并调整选项卡数量。</p>
+
+<h4>程序框图</h4>
+<p class="Body">由于触摸面板计算机的处理能力有限，National Instruments建议在可能的情况下，将计算任务转载至桌面或其他功能更加强大的终端。如需自定义程序框图，可根据应用程序需求删除或重命名现有的共享变量。对于添加至前面板的每个控件，可根据需要创建一个事件分支。和所有事件结构一样，请尽量避免重复每个分支相关的代码。共享变量可在事件结构的&ldquo;超时&#8221;分支中读取。</p>
+
+<h3>桌面主程序VI（主机）</h3>
+<h4>前面板</h4>
+<p class="Body">用户可更新或删除<strong>警告阈值&lt;替换该项&gt;</strong>控件。还可根据应用程序的实际需求添加控件。</p>
+
+<h4>程序框图</h4>
+<p class="Body">用户可使用自定义的数据生成或采集代码，修改事件处理循环&ldquo;超时&#8221;分支的数据生成和数据处理方式。数据处理量不大时也可保留&ldquo;超时&#8221;分支中的现有数据处理方式。但如果应用程序的计算量需求庞大，可将数据处理移至消息处理循环。如需移动数据处理至消息处理循环，可在条件结构中添加一个专门用于数据处理的分支。</p>
+
+<p class="Body">在消息处理循环的&ldquo;发送数据&#8221;分支中，可根据应用程序的实际需求删除或修改预警功能。</p> 
+
+<p><strong>注</strong>：本模板中的数据传输是有损耗的。如需实现无损耗数据传输，National Instruments建议使用其他数据传输协议，如网络流。</p>
+
+<h2>其他资源</h2>
+<p class="Body">关于模板中使用的LabVIEW对象的详细信息和基本概念，请参考<em>LabVIEW帮助</em>。请单击<strong>帮助&raquo; LabVIEW帮助</strong>打开LabVIEW帮助。当光标移动到各个LabVIEW对象上时，<strong>即时帮助</strong>窗口中显示对象的基本信息。选择<strong>帮助&raquo;显示即时帮助</strong>，可打开<strong>即时帮助</strong>窗口。</p>
+
+<hr>
+<h2>法律信息</h2><!--Copyright--><p><strong>版权</strong></p>
+<p>&copy; 2014-2015 National Instruments.版权所有</p>
+
+<p>根据版权法，未经National Instruments公司事先书面同意，本发行物不得以任何形式（包括电子或机械形式）进行全部或部分复制或传播，包括影印、录制、翻译，或储存于任何信息检索系统中。</p>
+
+<p>National Instruments公司尊重他方的知识产权，也恳请用户能给予我们同样的尊重。NI软件受版权法及其他知识产权法的保护。在将NI软件用于复制为他方所有的软件或其他资料的任何场合，NI软件仅可用于在符合许可证或其他法律限制的情况下复制上述资料。</p>
+
+<p><strong>最终用户许可协议和第三方法律声明</strong></p>
+<p>安装结束后，可在下列位置找到最终用户许可协议(EULA)和第三方法律声明：</p><ul><li>法律声明位于<span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span>和<span class="Monospace">&lt;National Instruments&gt;</span>目录下。</li> 
+<li>最终用户许可协议(EULA)位于<span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span>目录下。</li>
+<li>关于在使用NI产品生成的安装程序中包含法律信息的内容，请查阅<span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span>。</li></ul><p><strong>美国政府的有限权利</strong></p>
+<p>如果客户隶属于美国政府的一个机构、部门、或其他单位，则本手册所涵盖的技术信息的使用、拷贝、复制、发布、修改、披露或传递应当受到适用于民间机构的联邦采购条例52.227-14和适用于军用机构的联邦国防采购条例补充规定252.227-7014和252.227-7015中有限权利条款的约束。</p>
+
+<p><strong>IVI Foundation版权声明</strong></p>
+
+<p><span class="DNL">Content from the IVI specifications reproduced with permission from the IVI Foundation.</span></p>
+
+<p><span class="DNL">The IVI Foundation and its member companies make no warranty of any kind with regard to this material, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The IVI Foundation and its member companies shall not be liable for errors contained herein or for incidental or consequential damages in connection with the furnishing, performance, or use of this material.</span></p><!--Trademarks--><p><strong>商标</strong></p>
+
+<p>关于<span class="DNL">National Instruments</span>商标信息，请访问<a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a>的<em><span class="DNL">NI Trademarks and Logo Guidelines</span></em>页面。此处提及的其他产品和公司名称均为其各自公司的商标或商业名称。</p><!--Patents--><p><strong>专利权</strong></p>
+<p>关于NI产品和技术的专利权，请查看软件中的<strong>帮助&raquo;专利信息</strong>，光盘中的<span class="Monospace">patents.txt</span>文件，或<a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">ni.com/patents</a>上的<em>National Instruments Patent Notice</em>。</p>
+</body>
+</html>
