@@ -1,8 +1,20 @@
-### 2020年02月11日
+### 2020年02月16日
 
 
 
+```
+npm config set registry 'https://registry.npm.taobao.org'
+export ELECTRON_MIRROR='https://npm.taobao.org/mirrors/electron/'
+export SASS_BINARY_SITE='https://npm.taobao.org/mirrors/node-sass'
+```
 
+
+
+npm config set registry 'https://registry.npm.taobao.org'  export ELECTRON_MIRROR='https://npm.taobao.org/mirrors/electron/'  export SASS_BINARY_SITE='https://npm.taobao.org/mirrors/node-sass'
+
+
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
 
 
 
