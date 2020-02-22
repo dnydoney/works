@@ -1,6 +1,77 @@
 
+###  2020年02月21日
+-----------------------------------------------------------------
+
+
+
+
+    1、本地Flutter SDK 版本 1.9.1+hotfix.6 。
+    2、pubspec.yaml 中的第三方包版本和 pubspec.lock 中的是否对应的上ps 1.12.x 版本请切换到 dev_next 分支
+
+
+
+试一试下面这行代码切换到dev分支
+`flutter channel dev`
+然后
+`flutter version`
+打印出所有版本
+选择其中某个版本,进行切换，比如
+`flutter version v1.7.8+hotfix.4`
+
+
+
+
+
+
+    $ flutter channel
+      Flutter channels:
+        *   stable
+            beta
+            dev
+            master
+```
+
+flutter pub get
+
+packages get
+packages upgrade
+flutter upgrade
+flutter clean
+```
+
+
+ flutter go，官方的指南版本如下：
+1.版本version/channel切换问题
+
+```
+    flutter channel beta
+    flutter version v1.7.8 + hotfix.4
+ 
+
+	flutter pub cache repair
+    
+    flutter channel dev_next 
+    flutter version 1.9.1+hotfix.6
+    
+```
+
+2.将项目适配到web端
+```
+	flutter create .
+```
+3.运行到web上 && 运行到android上
+
+```
+    flutter run -d chrome
+    flutter run -d android
+```
+
+
+
+
 
 ###  2020年02月16日
+
 -----------------------------------------------------------------
 
 常用命令
@@ -33,7 +104,9 @@
 
 ```
 git clone https://github.com/creatint/light
+flutter pub cache repair
 flutter packages get
+flutter packages upgrade
 flutter run
 flutter build apk --release
 ```
