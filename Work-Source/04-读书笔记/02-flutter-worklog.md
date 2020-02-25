@@ -2,6 +2,30 @@
 
 -----------------------------------------------------------------
 
+### Running the samples
+
+#### iOS / Android
+
+```
+cd <sample_directory>
+flutter run 
+```
+
+#### Web
+
+Make sure you're on Flutter version "Flutter 1.12.13+hotfix.6 • channel beta" or newer. Not all samples support web at this time, so please check the sample directory for a `lib/main_web.dart` file.
+
+```
+cd <sample_directory>
+flutter run -d chrome -t lib/main_web.dart
+```
+
+
+
+###  2020年02月23日
+
+-----------------------------------------------------------------
+
 `Flutter GO for web` 的代码库
 
 
