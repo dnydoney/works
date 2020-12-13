@@ -1,3 +1,150 @@
+###  2020年11月18日
+
+-----------------------------------------------------------------
+
+
+
+{"ResultCode":"503","ResultMess":"找不到下一个审批节点，审批失败，可能是流程设计问题，请联系管理员！"}
+
+
+
+###  2020年11月03日
+
+-----------------------------------------------------------------
+
+
+
+"<!DOCTYPE html> <html> <head>    <title></title>    <script type="text/javascript">        function fullwin() {            top.location.href = "../Login/Index";            return false;        }    </script> </head> <body onload="fullwin()"> </body> </html> "
+
+
+
+[{
+
+"schemaId":"e2b82165-dec5-49a8-81c5-02092b282fa2",
+
+"schemaCode":"RFM-IW-2019002",
+
+"schemaName":"改革办-重点工作变更",
+
+"createDate":"2019/8/26
+0:00:00","creater":"郑培泰","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},
+
+
+
+{"schemaId":"ea31393b-e2a0-4f3d-9e07-d0d44136979e","schemaCode":"Computer-01","schemaName":"电脑申请流程","createDate":"2020/9/1
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"ad83d1ac-7d7c-4340-a512-2d5a28f762eb","schemaCode":"CompanyEmailApply_01","schemaName":"公司邮箱申请流程","createDate":"2020/9/19
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"2ca00cc8-fb72-49ae-8ff5-0cdaa0a01f0e","schemaCode":"GG-RCSX","schemaName":"日常事项流程","createDate":"2018/1/7
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"bf977984-cbc3-4fdb-b611-3859457235b0","schemaCode":"PRO-DE-2020001","schemaName":"发货申请","createDate":"2020/5/6
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"3b41d658-4a73-4f3a-9802-43dc3f9d2b60","schemaCode":"MeetingApply_01","schemaName":"会议室申请","createDate":"2020/10/21
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"23c01ff3-a1ca-42c4-92a3-dddfe0ab3eb5","schemaCode":"IPApply_01","schemaName":"IP地址申请流程","createDate":"2020/9/22
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"11e2ef4d-b76c-48de-84f0-fdd4a7b942f4","schemaCode":"HR-2020-001","schemaName":"出差流程-科级干部","createDate":"2020/8/19
+0:00:00","creater":"超级管理员","description":"人力资源部","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":"/Office/Frm_Evaction"},{"schemaId":"74cf3177-4301-424b-809b-79c742d8e276","schemaCode":"test","schemaName":"指定审核测试","createDate":"2018/6/26
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"a26cb16a-e368-4f04-8cee-740a33196c6b","schemaCode":"RFM-IW-2019001","schemaName":"改革办-重点工作申报","createDate":"2019/6/10
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":""},{"schemaId":"4854e368-80bd-42d2-bc6d-954d3e4c56dc","schemaCode":"HR-2020-002","schemaName":"请假流程-科级干部","createDate":"2020/8/14
+0:00:00","creater":"超级管理员","description":"","deleteMark":"0","enabledMark":"1","objectId":"","frmPath":"/Office/Frm_Leave"}]
+
+
+
+
+
+
+
+
+
+###  2020年11月02日
+
+-----------------------------------------------------------------
+
+
+
+
+
+出差人员，出差开始时间，出差结束时间，出差天数
+
+
+
+[{
+
+"P_Id":"1ad4c8a9-fdd6-2ee2-7113-11b9a1d3059c",
+
+"P_Name":"出差流程-科级干部",
+
+"P_CreateDate":"2020/11/2 14:49:09",
+
+"P_Status":"处理中",
+
+"EvectionDestination":"sdsdsds",
+
+"EvectionType":"1",---------------------------------------省内是1 省外是2
+
+"StartTime":"2020/11/2 14:49:00",
+
+"EndTime":"2020/11/30 14:49:00",
+
+"DaysCount":"33.0",
+
+"Delegator":"ssss"
+
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
+
+
+
+
+
+{
+
+
+
+"S_Id":"出差流程-科级干部",   --------------------------------------------------------------  模板名称
+
+"P_Id":"def6f747-a4ee-446b-95eb-883eef8b7a4e",-------------------------------流程实列ID
+
+"P_Title":"出差请假（微信发起）", ------------------------------------------------------流程实例标题
+
+"P_Creater":"郑培泰", -----------------------------------------------------------------------流程创建人
+
+"P_ImportentLevel":"2",-------------------------------------------------------------------重要等级
+
+"P_StatusId":"0",-----------------------------------------------------------------------------流程状态ID
+
+"P_StatusName":"处理中",---------------------------------------------------------------流程状态名称
+
+"P_CreateTime":"2020/10/24 8:47:40",----------------------------------------------流程创建时间
+
+"P_NodeName":"部门/单位负责人",---------------------------------------------------当前节点名称
+
+"P_NodeType":"2"--------------------------------------------------------------------------当前节点类型
+
+
+
+},
+
+
+
+
+
+{"S_Id":"出差流程-科级干部","P_Id":"feea6b19-cd3e-46a8-83b7-afb110beb4ae","P_Title":"出差请假（微信发起）","P_Creater":"郑培泰","P_ImportentLevel":"2","P_StatusId":"0","P_StatusName":"处理中","P_CreateTime":"2020/10/24 8:48:02","P_NodeName":"部门/单位负责人","P_NodeType":"2"},{"S_Id":"出差流程-科级干部","P_Id":"c5d35cbf-040a-46dc-a611-eb19a51dff73","P_Title":"出差请假（微信发起）","P_Creater":"郑培泰","P_ImportentLevel":"2","P_StatusId":"0","P_StatusName":"处理中","P_CreateTime":"2020/10/24 8:47:57","P_NodeName":"部门/单位负责人","P_NodeType":"2"},{"S_Id":"出差流程-科级干部","P_Id":"c752ace0-366d-41e0-acf7-7df39b7dca15","P_Title":"出差请假（微信发起）","P_Creater":"郑培泰","P_ImportentLevel":"2","P_StatusId":"0","P_StatusName":"处理中","P_CreateTime":"2020/10/24 8:47:55","P_NodeName":"部门/单位负责人","P_NodeType":"2"},{"S_Id":"出差流程-科级干部","P_Id":"2c59f27e-4004-4c5c-a19f-60ccb52babc4","P_Title":"出差请假（微信发起）","P_Creater":"郑培泰","P_ImportentLevel":"2","P_StatusId":"0","P_StatusName":"处理中","P_CreateTime":"2020/10/16 15:57:16","P_NodeName":"部门/单位负责人","P_NodeType":"2"},{"S_Id":"出差流程-科级干部","P_Id":"0c5f3852-88a5-4d85-bde8-03bcb5d7f8a5","P_Title":"出差请假（微信发起）","P_Creater":"郑培泰","P_ImportentLevel":"2","P_StatusId":"0","P_StatusName":"处理中","P_CreateTime":"2020/10/24 8:48:01","P_NodeName":"部门/单位负责人","P_NodeType":"2"}]
+
+
+
+
+
+
+
 
 
 
