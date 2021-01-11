@@ -1,4 +1,525 @@
 
+###  2021年01月07日
+-----------------------------------------------------------------
+
+
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+wait(10000).then(() => saySomething("10 seconds")).catch(failureCallback);
+
+
+Promise  承诺
+resolve ： 成功
+reject ： 失败
+
+
+[func1, func2, func3].reduce(
+	(p, f) => p.then(f), Promise.resolve()
+).then(result3 => {
+	/* use result3 */ 
+});
+
+
+
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+wait().then(() => console.log(4));
+
+Promise.resolve().then(() => console.log(2)).then(() => console.log(3));
+
+console.log(1); // 1, 2, 3, 4
+
+
+
+一个 Promise 必然处于以下几种状态之一：
+
+待定（pending）: 初始状态，既没有被兑现，也没有被拒绝。
+已兑现（fulfilled）: 意味着操作成功完成。
+已拒绝（rejected）: 意味着操作失败。
+
+
+
+
+15 +10+12
+
+
+
+
+1、好想从现在开始抱着你，紧紧地抱着你，一直走到上帝面前。
+
+2、朝阳初升映彩霞，暮随星月数流萤，日也盼君，夜也盼君；风掩落红埋心香，望穿天涯见浮云，坐也思君，行也思君。一曲爱歌随信去，愿君早日识相知。
+
+3、最难忘的是你的微笑，当它绽开在你的脸上时，我仿佛感到拂过一阵春风，暖融融的，把我的心都溶化了。
+
+4、爱是壶美酒，一饮便醉了；思念，是汹涌澎湃的大海，轻易就淹没了我；你，是朵娇艳的花，在我心中早已悄然开放！
+
+5、想剪一段清风，梳理你的秀发；想借一片细雨，洗去你的忧愁；想送一束鲜花，映衬你的娇颜。想爱你！
+
+6、思念军临城下，牵挂咫尺天涯，马蹄长嘶踏遍时间的黄沙，谁能拔剑斩断了红尘的车茶，侧首翻遍世世代代的情与诺，你在每一章每一次沉默与我作答。
+
+7、有一片天，为你晴；有一朵云，为你飘；有一叶草，为你绿；有一枝花，为你笑；有一弯月，为你走；有一个字，为你留。
+
+8、一心一意只爱你，三番两次思念你，四面八方只有你，五冬六夏来爱你，七上八下没睡意，久久不能心平静，十分相对你表白：我想爱你！
+
+9、你是我最苦涩的等待，让我欢喜又害怕未来，你最爱说你是一颗尘埃，偶尔会恶作剧的飘进我眼里，宁愿我哭泣，不让我爱你，你就真的像尘埃消失在风里。
+
+10、天空落雨，也许你不知道天在思念大地，狂风卷沙，也许你不知道风在思念沙粒，砂锅煮鱼，也许你不知道水在思念鲤鱼。渔翁钓的是寂寞，上钩的却是鱼。为什么？因为我要你知道我在想你。
+
+11、都说男友要有背景，可你只有背影，要有前途，可你只有短裤，要有票子，可你只有面子，要有房产，可你只有锅铲，我要求不高，那些都不重要，只要你一直对我好。
+
+12、爱情的温暖，身处严寒也是阳光普照；爱情的甜蜜，伤心之处也是一种美好；爱情的完整，相隔天涯也是心灵相靠；爱情的永久，短暂相逢也是天荒地老。
+
+13、一声爱你像一列客车，载着我们到地老天荒；一句想你像一颗恒星，闪烁在我们万年的银河。爱了就爱到底，甜蜜了就醉一生一世。爱你一生一世。
+
+14、和你在茫茫的人海中相遇，从此我知道了什么是人生的美好，不管是否属于命运，我都心甘情愿地接受，愿你开心快乐！
+
+15、为我爱的人唱一首歌，一首只属于你的歌；从日出唱到日暮，甜蜜音符一生都不会重复；为我爱的人唱一首歌，一首只属于我们的歌；从今生唱到来世，真诚演绎永远都不会落幕！
+
+16、风吹多少年，刮不走真情的爱恋；雨打多少遍，驱不散真爱的缠绵。你我的相遇，缘分来自茫茫苍天，和你的相恋，写下爱美丽的誓言。爱你一生一世。我们的爱恋，风雨相依、永不改变、心手相牵，直到永远！
+
+17、因为爱情，我开始夜不能寐；因为爱情，我开始迷恋情歌；因为爱情，我开始变得文艺；因为爱情，我开始发短信息。我只想告诉你：我爱你！
+
+18、从姑娘到老太，用一生的贤惠温柔去营造幸福的家庭；从小伙到老汉，用一辈子的担当去创造幸福的婚姻。牵手走过一生，风风雨雨共同承担；从青春到迟暮，一辈子的回忆分享不尽。爱你一生一世，幸福到永远。
+
+19、我只想告诉你，我有心中最美的戒指，那是你给的，它不名贵也不特别，但在我心里它却是我最想要的。你是我一生的宝贝，什么我都愿和你一起分享！
+
+20、真真的我有真真的心，真真的梦里真真的甜，真真的情有真真的意，真真的牵挂有真真的恋，真真的思念，真真的你，真真的一生，真真的爱你！
+
+21、有时候会被一句话感动，因为真诚；有时候会被一首歌流泪，因为动情；有时候会把回忆当作习惯，因为思念；有时候会发一个短信给你，因为牵挂着你。
+
+22、没有钻戒，只会把真心戴在你的指尖；没有富二代的家底，只有厚实的双肩；没有炫富的本钱，只有把承诺一点点实现。到老时，我给你当拐杖，撑着你向前！
+
+23、天空对大地的承诺，是雨的缠绵；岁月对季节的承诺，是色彩斑谰；夜空对星星的承诺，是晶莹剔透；我对你的承诺，是今生手相牵！
+
+24、我已经习惯了很多事情，习惯了看相同的风景，习惯了走相同的路线，习惯了牵着你的手，感觉着你的温柔，习惯了发短信告诉你：想你了。
+
+25、一见钟情这种事，浪漫却是不一定长久。日久生情这种事，很难却更难分开。一见钟情永远和外貌有关，日久生情永远和习惯有关。越缓慢的爱上一个人，也就爱的越是长久。
+
+26、左思右想，除了我，这世界上只有你对我好了，你不要我，谁要呢？这辈子最疯狂的事，就是爱上了你，最大的希望，就是有你陪我疯一辈子。
+
+27、无论哭笑，都有你的拥抱；无论出入，都有你做依靠；无论天涯还是海角，都有你陪我到老，亲爱的，我爱你，愿你开心如意，享快乐天地。
+
+28、有爱情，便要全心对待，没有爱情，也一个人惬意。学会一个人生活，不论身边是否有人疼爱。做好自己该做的，有爱或无爱，都安然对待。缘份到了，伸手便去抓住，缘份未到，就去为自己营造一个温馨的小世界。
+
+29、我坐在时间旁，思念坐我身旁，你在我心间，思念锁我眉间，你安静入睡，思念让我安静，一个人一辈子一次牵手，两个人两颗心两眼相望，亲爱的，爱你。
+
+30、爱不因春华秋实而枯萎，不因岁月流逝而凋零，不因沧海桑田而变迁，也不因现实生活而改变。我爱你，表达一份至真至纯的爱：我爱你，每时每刻！
+
+
+
+###  2021年01月04日
+-----------------------------------------------------------------
+
+http://mp.wlzhuanyun.com/qr/index.html?type=1&code=A100002
+
+
+
+```
+mkdir ms-fcreator-restful-api && cd ms-fcreator-restful-api
+```
+
+
+
+cnpm install tslib -g --S
+
+###  2021年01月02日
+-----------------------------------------------------------------
+
+
+ { '0': 'page=1&limit=20&sort=%2Bid' }
+
+nohup ./anki-restful-api start /snapshot/anki-restful-api --port=9898 --title=anki-restful-api &
+
+
+npm install jsonwebtoken -g  --save
+
+nohup ./ms_traceability_system_restful_api start /snapshot/ms_traceability_system_restful_api --port=6868 --title=ms_traceability_system_restful_api &
+
+
+
+./ms_traceability_system_restful_api start /snapshot/ms_traceability_system_restful_api --port=6868 --title=ms_traceability_system_restful_api 
+
+
+
+curl http://127.0.0.1:6868/api/v1/postsaletrace/find?cProductCode=A100002
+
+curl http://wx.wlzhuanyun.com/api/v1/postsaletrace/find?cProductCode=A100002
+
+
+
+egg-scripts start --port=6868--daemon --title=ms_traceability_system_restful_api
+
+
+
+###  2021年01月01日
+-----------------------------------------------------------------
+
+  header: {
+    host: '127.0.0.1:7001',
+    connection: 'keep-alive',
+    'content-length': '63',
+    'cache-control': 'max-age=0',
+    'upgrade-insecure-requests': '1',
+    origin: 'http://localhost:9528',
+    'content-type': 'application/json',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4356.6 Safari/537.36',
+    accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    referer: 'http://localhost:9528/',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'zh-CN,zh;q=0.9'
+  }
+}
+
+  header: {
+    'x-forwarded-host': 'localhost:9528',
+    'x-forwarded-proto': 'http',
+    'x-forwarded-port': '9528',
+    'x-forwarded-for': '127.0.0.1',    
+    'accept-language': 'zh-CN,zh;q=0.9',
+    'accept-encoding': 'gzip, deflate, br',
+    referer: 'http://localhost:9528/',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    origin: 'http://localhost:9528',
+    accept: '*/*',
+    'content-type': 'application/json',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4356.6 Safari/537.36',
+    'content-length': '0',
+    connection: 'close',
+    host: '127.0.0.1:7001'
+  }
+}
+
+
+
+###  2020年12月30日
+-----------------------------------------------------------------
+
+
+
+[Product Key] YCFHQ9DWCYDKV88T2TMHG7BHP
+
+
+
+YCFHQ-9DWCY-DKV88-T2TMH-G7BHP
+
+
+
+```kotlin
+npx sequelize migration:generate --name=init-BE_Traceablity 
+```
+
+
+
+```undefined
+cnpm i -S egg-validate
+```
+
+
+
+create table BE_Traceablity (
+   id                   varchar(100)         null,
+   version              int                  null,
+   cProductCode         varchar(100)         null,
+   cDigest              varchar(100)         null,
+   cOptUser             varchar(20)          null,
+   dOptDate             datetime             null,
+   cRemark              varchar(100)         null,
+   dCreateDate          datetime             null,
+   cCreateUser          varchar(20)          null,
+   cOrgCode             varchar(100)         null,
+   cOrgName             varchar(100)         null
+)
+
+
+
+
+
+
+
+
+###  2020年12月29日
+-----------------------------------------------------------------
+
+
+
+| 服务价格               | 免费                                                  | 3600元                                                | 电话咨询                                              | 电话咨询                                              |
+| :--------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| 使用期限               | 终身                                                  | 终身                                                  | 终身                                                  | 终身                                                  |
+| 技术支持               | 无                                                    | 一年                                                  | 一年                                                  | 两年                                                  |
+| 首页多模版             | 7套                                                   | 10套                                                  | 10套                                                  | 10套                                                  |
+| 微信发布工具           | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 海报功能               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 简历模板套             | 4套                                                   | 7套                                                   | 7套                                                   | 7套                                                   |
+| WAP端后台管理系统      | 无                                                    | 可订购                                                | 可订购                                                | 自带                                                  |
+| CRM管理系统            | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 培训模块               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 校园招聘               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 在线聊天               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 苹果IOS客户端          | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 网络招聘会             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 安卓APP客户端          | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 企业子帐号             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 百度小程序             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 供求平台               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 猎头模块               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 猎头赏金推荐           | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 分站二级目录形式       | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 阿里云OSS远程存储      | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 百度百聘               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 竞争力分析             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 账户切换               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 好友助力               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 客服评价功能           | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信小程序             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信支付               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信提现               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信H5支付             | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信模板消息功能       | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 对接千帆云/马甲App     | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 后台数据统计功能       | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 面试评价               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 数据导入               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 职位分享/悬赏推广      | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 订阅功能               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 后台分站独立管理       | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 广告订单               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 委托招聘               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信红包               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 远程培训（服务）       | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 使用和维护培训（服务） | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 运行环境配置（服务）   | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| mysql修复（服务）      | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 二次开发咨询（服务）   | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 服务期间数据转移       | 无                                                    | 无                                                    | 1次                                                   | 3次                                                   |
+| 软件安装               | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 软件升级               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 网站SEO服务            | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 夜间及周末电话         | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s2.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 天眼查工商信息查询     | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 简历模糊化             | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 店铺招聘               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 普工招聘               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 兼职招聘               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 微信客户端             | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 数据采集（功能）       | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 伪静态                 | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 预警机制               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 专题招聘               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 测评模块               | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 招聘会订展位功能       | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 首页模版主题           | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| 整合uc                 | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) | ![img](https://www.phpyun.com/template/images/s1.png) |
+| CSRF安全防护           |                                                       |                                                       |                                                       |                                                       |
+
+
+
+我们这边可以提供的帮助：
+
+1. 帮您重装服务器。
+
+2. 重新部署一套程序。
+
+   
+
+https://www.hr135.com/
+
+a.xqtitlelink
+
+
+###  2020年12月25日
+
+-----------------------------------------------------------------
+
+
+
+
+https://www.mingyantong.com/
+
+https://sj.enterdesk.com/
+
+https://www.3gbizhi.com/
+
+http://tu.baidu.com/
+
+
+###  2020年12月23日
+
+-----------------------------------------------------------------
+
+
+http://127.0.0.1:7001/swagger-doc
+http://127.0.0.1:7001/swagger-ui.html
+
+https://file.ankichinas.cn/server/api/card/recommend?page=1&size=10&subjectId=0&levelId=0
+
+{
+"code":0,
+"message":"",
+"data":{
+"list":[
+{"title":"2022XDF恋练有词",
+"tags":[{"tagId":1,"tagName":"英语"},{"tagId":2,"tagName":"考研英语"}],
+"score":5,
+"status":1,
+"price":0,
+"deleted":0,
+"subjectName":"考研英语",
+"levelName":"硕士",
+"userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg",
+"userNickname":"时光Anki",
+"cardId":"5fdf3620715b3A9S",
+"userId":"5fdefead9b555Rgu",
+"subjectId":36,
+"levelId":6,
+"fileName":"2022XDF恋练有词.apkg",
+"fileSize":129710118,
+"downloadUserCount":66,
+"downloadCount":112
+,"evaluateUserCount":4,
+"evaluateGoodCount":4,
+"createAt":"2020-12-20 19:31:44",
+"updateAt":"2020-12-23 10:54:42"},
+
+
+
+
+
+
+{"title":"21肖四浓缩背诵版-官方解析+精缩","tags":[{"tagId":31,"tagName":"政治"},{"tagId":32,"tagName":"肖四"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"考研政治","levelName":"硕士","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","userNickname":"时光Anki","cardId":"5fdf0f277e223WAK","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21肖四浓缩背诵版-【时光Anki】.apkg","fileSize":860362,"downloadUserCount":57,"downloadCount":103,"evaluateUserCount":6,"evaluateGoodCount":6,"createAt":"2020-12-20 16:45:27","updateAt":"2020-12-23 11:26:45"},{"title":"英文词根500个","tags":[{"tagId":36,"tagName":"英文"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"英语","levelName":"大学","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"mrkind","cardId":"5fdf13fcd8581W3t","userId":"5fdf0f6f3dd66SFK","subjectId":1,"levelId":5,"fileName":"词根.apkg","fileSize":97891,"downloadUserCount":44,"downloadCount":57,"evaluateUserCount":2,"evaluateGoodCount":2,"createAt":"2020-12-20 17:06:04","updateAt":"2020-12-23 11:41:32"},{"title":"计算机网络基础知识","tags":[{"tagId":29,"tagName":"计算机网络"}],"score":3,"status":1,"price":0,"deleted":0,"subjectName":"电子通信","levelName":"大学","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"leany","cardId":"5fdf09402ff6dakS","userId":"5fdf0532767carYa","subjectId":29,"levelId":5,"fileName":"计算机网络.apkg","fileSize":994390,"downloadUserCount":23,"downloadCount":34,"evaluateUserCount":1,"evaluateGoodCount":1,"createAt":"2020-12-20 16:20:16","updateAt":"2020-12-23 11:22:29"},{"title":"21考研政治预测卷时政选择合集","tags":[{"tagId":31,"tagName":"政治"},{"tagId":33,"tagName":"时政"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"考研政治","levelName":"硕士","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","userNickname":"时光Anki","cardId":"5fdf0fb766f8aWKd","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21预测卷时政合集.apkg","fileSize":644010,"downloadUserCount":18,"downloadCount":19,"evaluateUserCount":2,"evaluateGoodCount":0,"createAt":"2020-12-20 16:47:51","updateAt":"2020-12-23 10:19:40"},{"title":"21考研政治预测卷最终帽子题","tags":[{"tagId":31,"tagName":"政治"},{"tagId":34,"tagName":"帽子"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"考研政治","levelName":"硕士","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","userNickname":"时光Anki","cardId":"5fdf1033be81cV9a","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21预测卷最终帽子题.apkg","fileSize":94273,"downloadUserCount":15,"downloadCount":17,"evaluateUserCount":3,"evaluateGoodCount":3,"createAt":"2020-12-20 16:49:55","updateAt":"2020-12-23 10:17:43"},{"title":"CPA财务管理","tags":[{"tagId":30,"tagName":"会计"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"会计","levelName":"硕士","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"张勇利","cardId":"5fdf0bef44dbdrxZ","userId":"5fdf088cd09a2dvb","subjectId":30,"levelId":6,"fileName":"【财会】CPA-财务管理.apkg","fileSize":6470201,"downloadUserCount":14,"downloadCount":20,"evaluateUserCount":2,"evaluateGoodCount":0,"createAt":"2020-12-20 16:31:43","updateAt":"2020-12-22 22:59:00"},{"title":"一些常见的诗词","tags":[{"tagId":28,"tagName":"诗词"}],"score":3,"status":1,"price":0,"deleted":0,"subjectName":"语文","levelName":"高中","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"leany","cardId":"5fdf08bb713a1xjr","userId":"5fdf0532767carYa","subjectId":3,"levelId":4,"fileName":"诗词.apkg","fileSize":10867504,"downloadUserCount":14,"downloadCount":17,"evaluateUserCount":1,"evaluateGoodCount":1,"createAt":"2020-12-20 16:18:03","updateAt":"2020-12-22 23:33:16"},{"title":"21木易考研政治预测卷选择知识点考点汇总","tags":[{"tagId":31,"tagName":"政治"}],"score":5,"status":1,"price":0,"deleted":0,"subjectName":"考研政治","levelName":"硕士","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","userNickname":"时光Anki","cardId":"5fdf1247174afIQd","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21木易预测卷选择知识点考点汇总.apkg","fileSize":313053,"downloadUserCount":12,"downloadCount":14,"evaluateUserCount":2,"evaluateGoodCount":2,"createAt":"2020-12-20 16:58:47","updateAt":"2020-12-23 09:05:31"},{"title":"Linux记忆部分","tags":[{"tagId":47,"tagName":"Linux"}],"score":3,"status":1,"price":0,"deleted":0,"subjectName":"计算机","levelName":"大学","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"中国好码农","cardId":"5fdf61e4b392bU3i","userId":"5fdf5e59ba0cbdue","subjectId":13,"levelId":5,"fileName":"Linux.apkg","fileSize":11683321,"downloadUserCount":11,"downloadCount":13,"evaluateUserCount":1,"evaluateGoodCount":1,"createAt":"2020-12-20 22:38:28","updateAt":"2020-12-22 23:00:03"}],"count":527}}
+
+https://file.ankichinas.cn/server/api/card/detail?cardId=5fdf61e4b392bU3i
+{"code":0,"message":"","data":{"userId":"5fdf5e59ba0cbdue","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"中国好码农","userSign":"","fileCount":11,"recommendCount":2,"card":{"title":"Linux记忆部分","evaluated":false,"score":3,"tags":[{"tagId":47,"tagName":"Linux"}],"userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","userNickname":"中国好码农","levelName":"大学","subjectName":"计算机","evaluateUserCount":1,"downloadUserCount":11,"fileName":"Linux.apkg","fileSize":11683321,"createAt":"2020-12-20 22:38:28","content":"","desc":""},"userOther":[{"title":"1000个英语短语","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"中国好码农","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"初中","cardId":"5fe2022b58c8eDni","userId":"5fdf5e59ba0cbdue","subjectId":1,"levelId":3,"fileName":"1000_Phrases_for_English.apkg","fileSize":8626609,"downloadUserCount":2,"downloadCount":2,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-22 22:26:51","updateAt":"2020-12-23 06:33:21"},{"title":"irregular verbs 不规则动词","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"中国好码农","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"初中","cardId":"5fe2014f1de64S3R","userId":"5fdf5e59ba0cbdue","subjectId":1,"levelId":3,"fileName":"irregular verbs 不规则动词.apkg","fileSize":5407684,"downloadUserCount":0,"downloadCount":0,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-22 22:23:11","updateAt":"2020-12-22 22:23:11"},{"title":"英语词根与单词的说文解字","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"中国好码农","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"初中","cardId":"5fe201049545buzg","userId":"5fdf5e59ba0cbdue","subjectId":1,"levelId":3,"fileName":"英语词根与单词的说文解字-李平武.apkg","fileSize":222563,"downloadUserCount":0,"downloadCount":0,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-22 22:21:56","updateAt":"2020-12-22 22:21:56"}],"recommend":[]}}
+
+
+
+
+
+https://file.ankichinas.cn/server/api/card/detail?cardId=5fdf3620715b3A9S
+
+
+
+{"code":0,"message":"","data":{
+
+"userId":"5fdefead9b555Rgu",
+
+"userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg",
+
+"userNickname":"时光Anki",
+
+"userSign":"微信公众号【时光Anki】"
+
+,"fileCount":7,
+
+"recommendCount":24,
+
+"card":{
+
+"title":"2022XDF恋练有词",
+
+"evaluated":false,
+
+"score":5,
+
+"tags":[{"tagId":1,"tagName":"英语"},{"tagId":2,"tagName":"考研英语"}],
+
+"userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg",
+
+"userNickname":"时光Anki","levelName":"硕士","subjectName":"考研英语","evaluateUserCount":5,"downloadUserCount":88,"fileName":"2022XDF恋练有词.apkg","fileSize":129710118,"createAt":"2020-12-20 19:31:44","content":"<p>2022XDF恋练有词<br></p>","desc":"2022XDF恋练有词"},
+
+
+
+"userOther":[{"title":"21木易考研政治预测卷选择知识点考点汇总","tags":[{"tagId":31,"tagName":"政治"}],"score":5,"status":1,"price":0,"deleted":0,"userNickname":"时光Anki","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","subjectName":"考研政治","levelName":"硕士","cardId":"5fdf1247174afIQd","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21木易预测卷选择知识点考点汇总.apkg","fileSize":313053,"downloadUserCount":14,"downloadCount":16,"evaluateUserCount":2,"evaluateGoodCount":2,"createAt":"2020-12-20 16:58:47","updateAt":"2020-12-23 19:18:33"},{"title":"21万磊考研政治6套卷选择anki","tags":[{"tagId":31,"tagName":"政治"}],"score":5,"status":1,"price":0,"deleted":0,"userNickname":"时光Anki","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","subjectName":"考研政治","levelName":"硕士","cardId":"5fdf11ee7e2cbihH","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21万磊6套卷选择-【时光Anki】.apkg","fileSize":454343,"downloadUserCount":1,"downloadCount":3,"evaluateUserCount":2,"evaluateGoodCount":2,"createAt":"2020-12-20 16:57:18","updateAt":"2020-12-23 14:00:51"},{"title":"21刘源泉考研政治5套卷","tags":[{"tagId":31,"tagName":"政治"}],"score":5,"status":1,"price":0,"deleted":0,"userNickname":"时光Anki","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-20/5fdefead9b555Rgu_5fdf1067692c9.jpeg","subjectName":"考研政治","levelName":"硕士","cardId":"5fdf11a410f5cbVT","userId":"5fdefead9b555Rgu","subjectId":28,"levelId":6,"fileName":"21刘源泉5套卷【时光Anki】.apkg","fileSize":422402,"downloadUserCount":3,"downloadCount":4,"evaluateUserCount":3,"evaluateGoodCount":3,"createAt":"2020-12-20 16:56:04","updateAt":"2020-12-23 15:22:55"}],"recommend":[{"title":"真题背单词","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"张勇利","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"硕士","cardId":"5fdf0b65a399eRwt","userId":"5fdf088cd09a2dvb","subjectId":1,"levelId":6,"fileName":"真题背单词_考研英一_.apkg","fileSize":289282,"downloadUserCount":14,"downloadCount":25,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-20 16:29:25","updateAt":"2020-12-23 20:17:50"},{"title":"红宝书","tags":[{"tagId":1,"tagName":"英语"}],"score":3,"status":1,"price":0,"deleted":0,"userNickname":"张勇利","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"硕士","cardId":"5fdf0ad4079f0b3V","userId":"5fdf088cd09a2dvb","subjectId":1,"levelId":6,"fileName":"精排红宝书+蓝宝书.apkg","fileSize":2147562,"downloadUserCount":10,"downloadCount":27,"evaluateUserCount":1,"evaluateGoodCount":1,"createAt":"2020-12-20 16:27:00","updateAt":"2020-12-24 01:01:39"},{"title":"新概念英语第2册.","tags":[{"tagId":1,"tagName":"英语"}],"score":3,"status":1,"price":0,"deleted":0,"userNickname":"妮妮","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"其他","cardId":"5fe08b4334a25Wt6","userId":"5fe085c7910ddYNU","subjectId":1,"levelId":99,"fileName":"新概念英语第2册.apkg","fileSize":3956636,"downloadUserCount":9,"downloadCount":10,"evaluateUserCount":1,"evaluateGoodCount":1,"createAt":"2020-12-21 19:47:15","updateAt":"2020-12-24 00:30:47"},{"title":"高中英语单词&短语合集(4000词 扩展版)(附带发音+例句)","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"Trouble Maker","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-22/ac4ef3eb040dadae.1607270704.jpg","subjectName":"英语","levelName":"高中","cardId":"5fe18db6206dfmxi","userId":"5fe17a8955352ijE","subjectId":1,"levelId":4,"fileName":"高中英语单词&短语合集(4000词 扩展版)(附带发音+例句)apkg","fileSize":30209474,"downloadUserCount":7,"downloadCount":8,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-22 14:09:58","updateAt":"2020-12-24 06:26:46"},{"title":"新概念英语第1册.","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"妮妮","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"其他","cardId":"5fe08b30358bfaIJ","userId":"5fe085c7910ddYNU","subjectId":1,"levelId":99,"fileName":"新概念英语第1册.apkg","fileSize":4093457,"downloadUserCount":7,"downloadCount":9,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-21 19:46:56","updateAt":"2020-12-24 00:30:28"},{"title":"何凯文1575","tags":[{"tagId":2,"tagName":"考研英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"Lontern","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/default/user-avatar.png","subjectName":"英语","levelName":"硕士","cardId":"5fdf583668aa3evX","userId":"5fdf5623b4bdc6Rf","subjectId":1,"levelId":6,"fileName":"何凯文1575.apkg","fileSize":16785536,"downloadUserCount":5,"downloadCount":6,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-20 21:57:10","updateAt":"2020-12-24 08:53:09"},{"title":"大学四级英语单词全集","tags":[{"tagId":1,"tagName":"英语"}],"score":0,"status":1,"price":0,"deleted":0,"userNickname":"南野灵柩","userAvatar":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user/2020-12-22/644bad027859b1ec.1608227170.jpg","subjectName":"英语","levelName":"大学","cardId":"5fe18db5dd7366Cu","userId":"5fe17a88de093BS4","subjectId":1,"levelId":5,"fileName":"大学四级英语单词全集apkg","fileSize":154381844,"downloadUserCount":5,"downloadCount":9,"evaluateUserCount":0,"evaluateGoodCount":0,"createAt":"2020-12-22 14:09:57","updateAt":"2020-12-24 07:12:32"}]}}
+
+
+
+https://zhuanlan.zhihu.com/p/64440909
+
+
+
+
+https://file.ankichinas.cn/server/api/card/downloadUrl?cardId=5fdf61e4b392bU3i
+
+https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user-file/2020-12-20/5fdf5e59ba0cbdue_5fdf61e07a676/Linux.apkg
+
+{"code":0,"message":"","data":{"url":"https://anki-resource.oss-cn-shenzhen.aliyuncs.com/user-file/2020-12-20/5fdf5e59ba0cbdue_5fdf61e07a676/Linux.apkg","downloadUserCount":12}}
+
+
+###  2020年12月14日
+
+-----------------------------------------------------------------
+
+
+请假详情
+
+{"frmData":"[{\"type\":\"input\",\"field\":\"Title\",\"label\":\"标题\",\"value\":\"请假流程-小程序\"},{\"type\":\"lable\",\"field\":\"departmentname\",\"label\":\"发起人部门\",\"value\":\"信息中心\"},{\"type\":\"lable\",\"field\":\"createusername\",\"label\":\"发起人名称\",\"value\":\"汪东详\"},{\"type\":\"lable\",\"field\":\"postname\",\"label\":\"发起人职位\",\"value\":\"高级研究员\"},{\"type\":\"datetime\",\"field\":\"StartTime\",\"label\":\"开始时间\",\"value\":\"2020-12-11 08:00\"},{\"type\":\"datetime\",\"field\":\"EndTime\",\"label\":\"结束时间\",\"value\":\"2020-12-11 17:00\"},{\"type\":\"input\",\"field\":\"DayCount\",\"label\":\"天数\",\"value\":\"1\"},
+
+{\"type\":\"select\",\"field\":\"ApplyType\",\"label\":\"请假类型\",\"value\":\"1\"},
+
+{\"type\":\"input\",\"field\":\"Reason\",\"label\":\"请假原因\",\"value\":\"测试\"},{\"type\":\"input\",\"field\":\"Delegator\",\"label\":\"工作委托\",\"value\":\"还有\"},{\"type\":\"input\",\"field\":\"DelegatorPhone\",\"label\":\"委托人手机\",\"value\":\"15869784567\"},{\"type\":\"input\",\"field\":\"TheDestination\",\"label\":\"前往地点\",\"value\":\"测试\"},{\"type\":\"datetime\",\"field\":\"ApplyTime\",\"label\":\"申请时间\",\"value\":\"2020/12/11 09:14:55\"},{\"type\":\"select\",\"field\":\"Applicant\",\"label\":\"申请人ID\",\"value\":\"6119ded9-6c3c-46d8-8eeb-0c3acf01b648\"},{\"type\":\"input\",\"field\":\"ApplicantPhone\",\"label\":\"申请人手机\",\"value\":\"13361599901\"},{\"type\":\"select\",\"field\":\"Department\",\"label\":\"所属部门\",\"value\":\"df98ed25-5c92-4068-8604-bf59add9a058\"},{\"type\":null,\"field\":null,\"label\":null,\"value\":null}]","verifyData":"[]","createusername":"汪东详","departmentname":"信息中心"}
+
+
+
+{"Table":[
+
+{"Id":"5de90b0e-f4fb-7de0-1e56-dc1e50058139","Code":"请假流程-小程序",
+
+"CustomName":"请假流程-小程序",
+
+"ActivityId":"FlowPanel_node_31",
+
+"ActivityName":"部门/单位负责人",
+
+"ActivityType":2,
+
+"ProcessSchemeId":"ba5482a4-6e93-42d8-a340-c4a8f8ac621d",
+
+"SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f",
+
+"SchemeTypeName":"行政类",
+
+"MakerList":"df98ed25-5c92-4068-8604-bf59add9a058",
+
+"EnabledMark":1,
+
+"CreateDate":"2020-12-11 09:11:17",
+
+"CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648",
+
+"CreateUserName":"汪东详",
+
+"isFinish":0,
+
+"Description":"",
+
+"wfLevel":1,
+
+"FullName":"信息中心",
+
+"节点执行人账号":"wangdongxiang",
+
+"StartTime":"2020-12-11 08:00:00",
+
+"EndTime":"2020-12-11 17:00:00",
+
+"DayCount":1.0,
+
+"TheDestination":"你好",
+
+"Operator":"汪东详"},
+
+
+
+
+
+
+
+{"Id":"7a5869cc-daee-953d-e7eb-d75aba623f18","Code":"出差流程-小程序","CustomName":"出差流程-小程序","ActivityId":"FlowPanel_node_5","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"1495b31b-c6a0-42b7-b1d2-4d1661fe57fc","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 09:01:25","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"哪里","Operator":"汪东详"},{"Id":"bd2c9c6f-6379-4ca9-980d-cb1c08f08de7","Code":"请假流程-小程序","CustomName":"请假流程-小程序","ActivityId":"FlowPanel_node_31","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"32f72a81-714b-4e34-ae9e-e73c0c085cdc","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:59:59","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"潍坊","Operator":"汪东详"},{"Id":"6652b8a4-08c4-06be-11aa-84f5051eb23e","Code":"请假流程-小程序","CustomName":"请假流程-小程序","ActivityId":"FlowPanel_node_31","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"2c6d252e-e951-4510-b2c4-e4712b1561dd","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:53:07","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"Hjj","Operator":"汪东详"},{"Id":"3b7fa9bd-7d12-9ee4-3519-c601156bb694","Code":"出差流程-小程序","CustomName":"出差流程-小程序","ActivityId":"FlowPanel_node_5","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"9db657d5-3a4a-4054-b5c8-34b3f80269db","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:51:44","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"Crhsi","Operator":"汪东详"},{"Id":"d12f6815-2ff2-1f39-abfb-fc8377b5aae4","Code":"出差流程-小程序","CustomName":"出差流程-小程序","ActivityId":"FlowPanel_node_5","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"d8cbc8fc-d312-4bf4-9d80-4a93e31f999a","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:39:11","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"海外代购","Operator":"汪东详"},{"Id":"621bea18-0048-e410-4cdc-5a50ecff91ae","Code":"请假流程-小程序","CustomName":"请假流程-小程序","ActivityId":"FlowPanel_node_31","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"c11275e5-afd5-411b-8240-6569fa3d60ca","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:38:13","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"驾校","Operator":"汪东详"},{"Id":"5c7197db-77b3-50e9-7f23-a9da6bd8c09e","Code":"请假流程-小程序","CustomName":"请假流程-小程序","ActivityId":"FlowPanel_node_31","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"ed6cd31c-2e20-47b7-899f-6643e5ebc6ca","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:32:33","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"驾校","Operator":"汪东详"},{"Id":"61d7f72f-adbe-5e92-3080-d1be8b8702e5","Code":"出差流程-小程序","CustomName":"出差流程-小程序","ActivityId":"FlowPanel_node_5","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"5a2aa537-4c94-4392-a36e-c0e315a8446b","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:23:00","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"海外","Operator":"汪东详"},{"Id":"02d1f346-8783-759a-3bcb-309685e0258b","Code":"请假流程-小程序","CustomName":"请假流程-小程序","ActivityId":"FlowPanel_node_31","ActivityName":"部门/单位负责人","ActivityType":2,"ProcessSchemeId":"20a7e7d7-c031-486d-bda8-f63e92f3124b","SchemeType":"75d97388-1e5e-4249-86ea-c6f012417b7f","SchemeTypeName":"行政类","MakerList":"df98ed25-5c92-4068-8604-bf59add9a058","EnabledMark":1,"CreateDate":"2020-12-11 08:22:33","CreateUserId":"6119ded9-6c3c-46d8-8eeb-0c3acf01b648","CreateUserName":"汪东详","isFinish":0,"Description":"","wfLevel":1,"FullName":"信息中心","节点执行人账号":"wangdongxiang","StartTime":"2020-12-11 08:00:00","EndTime":"2020-12-11 17:00:00","DayCount":1.0,"TheDestination":"会拒绝","Operator":"汪东详"}]}
 
 正文内容一般包括：
 
@@ -17,6 +538,7 @@
 
 
 ###  2020年12月07日
+
 -----------------------------------------------------------------
 
 

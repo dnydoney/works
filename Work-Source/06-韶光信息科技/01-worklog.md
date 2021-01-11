@@ -48,22 +48,6 @@ https://www.jocat.cn/wp-content/plugins/erphpdown/download.php?url=32f2af933e53c
 
 ------
 
-mysql数据库
-
-http://www.mindsedu.com/php-my-admin/
-
-用户名：mwater
-
-密   码：upHRq12EMQl8Z65n
-
-数据库名称：mwater
-
-
-
-访问域名地址：mp.eihome.com.cn
-
-
-
 
 
 你好，李总，我已经把咱们的情况跟公司汇报了，公司也非常重视，由于百度公司回收流量，导致我们公司对您承诺的无法兑现，我们感到非常抱歉。对于咱们的小程序，我们公司在前期也付出了很大的努力和成本，我们公司想跟您协商一下，收取咱们公司一个基本费用和已经支付的发票费用约计1500元（合同额：5500），其余费用给咱们公司退回去，如果您愿意，我立即跟公司申请给您退款。
