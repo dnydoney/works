@@ -39,7 +39,7 @@
     "./config/*.js",
     "./app.js",
     "./app/**/*.js",
-    "./node_modules/nanoid/**/*.js"  //该行为必须添加，由于Egg.js使用nanoid库，其中用				到一个文件pkg未能解析，于是手动添加
+    "./node_modules/**/*.js"  //该行为必须添加，由于Egg.js使用nanoid库，其中用				到一个文件pkg未能解析，于是手动添加
     ]
 }
 
