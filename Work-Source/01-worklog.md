@@ -1,7 +1,519 @@
 
 
+
+###  2021年05月19日
+-----------------------------------------------------------------
+
+
+
+紧急告警-{1}年{2}月{3}日{4}时{5}分{6}秒,{7}线路发生故障告警信号，强度{8}级，故障距离约{9}米，请及时采取措施处理
+
+
+
+
+
+{1}年{2}月{3}日{4}时{5}分{6}秒{7}发生故障告警信号，强度{8}级，故障距离约{9}米，请及时采取措施处理！技术服务电话：0533-3586825
+
+  <button v-on:click="initInfo">
+
+​    Enlarge text
+
+  </button>
+
+ components: {
+
+  HelloWorld
+
+ },
+
+ data() {  
+
+  return { }
+
+  
+
+ },
+
+ methods: {  
+
+   
+
+  initInfo:function () {
+
+   console.log('--------------------')
+
+   this.axios.get('https://wx.jingzhaoshare.com/api/wechatshopinfo/test_check?index=2').then((response) => {
+
+​     console.log(response.data)
+
+   })
+
+   console.log('--------------------')
+
+  }
+
+ }
+
+
+
+
+
+D:/software/mysql-5.7.34-winx64/bin/mysqldump -h127.0.0.1 -P3306  -uroot  -p123456   rsktdq  >  D:\zbketong\database_backup\2021-05-23rsktdq.sql
+
+
+
+你好，周总，你再看看咱们优化后的版本，这次设计师把不同操作状态下的图像呈现状态，也做出来了
+
+
+
+我已经认真看了咱们发送的修改文档，对于设计工作提了很多详细的改进意见，尤其肯定了整体布局的设计，为我们后续细化设计出更加贴近咱们需求的UI，提供了很大的帮助，对此表示感谢
+
+
+
+我已经把咱们的修改意见发送给设计师和开发工程师了，他们有疑问随时回跟您沟通，目前设计师通过文档了解咱们的需求，这种方式为设计师留下了很大的想象空间，设计出的UI，偏离需求，属于正常情况，正常情况下需要经过两三次修正，才能让交付UI贴近需求。
+
+
+
+为了能够整体推进项目进度，按期完成咱们的项目，在整体布局框架认同的情况下，我决定采取快速发布首发版本，版本迭代的方式实施咱们的项目，对于局部的不认同，不完善，咱们可以继续优化，等首发版本出来后，咱们通过版本迭代的方式，不断完善。
+
+
+
+技术工程师已经将整体框架的开发工作马上结束了，如果您认同这种方式，我先安排技术工程师，推进下一步的业务功能的开发
+
+
+
+咱们的UI设计工程师，软件开发工程师都在群里，能够随时了解到咱们的想法
+
+
+
+客户只是为了降低成本，做了仿制，并未做功能拓展，仅在软件方面，做了特殊限制，硬件方面未作拓展
+
+
+
+
+
+需求范围描述
+我们需要你能提高一整套的云端数据和用户管理系统，包括数据库设计和部署，服务器端和客户端的开发，用户端UI设计和具体的网站搭建。以下是具体需要的功能。
+
+客户端功能
+•      用户系统。登录，注册，验证，找回密码功能。为每个用户创建账号，管理自己的设备，查看
+设备数据。
+•      设备管理。用户能够查看每个设备的具体状态（是否在线，有无错误，设备信息），管理设备（重命名，加密，添加，删除，设置，系统升级）
+•      数据展示。
+用户能够查看数据，以表格，图的形式呈现。能够展示基本的统计信息（趋势线，移动平均线，等等），能够自定义图样式（数据点样式，线粗细等等），自定义数据展示范围（从什么时间到什么时间，哪个设备的数据，符合什么条件的数据，等等），图交互展示（放大缩小，拖动，显示数据点数值，显示隐藏特定折线图，手动设置XY坐标范围），自定义公式（展示用户自己定义公式计算出的数据），导出图（生成本地文件供用户保存使用）。
+
+
+服务器端
+我们需要服务器端实现两个主要功能，数据管理和用户管理。我们需要你能设计一个合适的数据库能够管理大量设备数据和用户数据。能够根据不同的用户和设备给出相应的查询结果。每次用户查询数据的时候能够实现自动的数据校准（你只要提供相应的接口，我们自己实现数据校准算法）。我们希望数据管理系统能够实现内容控制，例如能控制什么类型的用户（收费用户，免费用户）能够访问什么样的数据。
+以上是本项目的基本要求，我们希望你能提供具体的设计，比如用什么样的技术，具体的时间线等等。具体的细节后面可以开会讨论，但是希望你能根据我们的要求提供解决方案。有类似项目开发经验的优先。 
+
+
+
+
+项目背景简介
+我们正在开发一种数据采集设备，该设备会定时产生数据，并且通过网络将数据传输到服务器，然后存入到数据库里。当用户需要查看数据的时候，服务器在从数据库中提取数据，传给用户浏览器，然后展示给用户。数据库存储的是原始数据，中间有一个校准的过程，展现给用户的数据是校准后的。数据校准在用户访问数据的时候进行。每个设备有一个独特的识别码，一个用户可以管理多个设备或者多个不同用户可以管理同一个设备。
+需求范围描述
+我们需要你能提高一整套的云端数据和用户管理系统，包括数据库设计和部署，服务器端和客户端的开发，用户端UI设计和具体的网站搭建。以下是具体需要的功能。
+客户端功能
+•      用户系统。登录，注册，验证，找回密码功能。为每个用户创建账号，管理自己的设备，查看设备数据。
+•      设备管理。用户能够查看每个设备的具体状态（是否在线，有无错误，设备信息），管理设备（重命名，加密，添加，删除，设置，系统升级）
+•      数据展示。用户能够查看数据，以表格，图的形式呈现。能够展示基本的统计信息（趋势线，移动平均线，等等），能够自定义图样式（数据点样式，线粗细等等），自定义数据展示范围（从什么时间到什么时间，哪个设备的数据，符合什么条件的数据，等等），图交互展示（放大缩小，拖动，显示数据点数值，显示隐藏特定折线图，手动设置XY坐标范围），自定义公式（展示用户自己定义公式计算出的数据），导出图（生成本地文件供用户保存使用）。
+服务器端
+我们需要服务器端实现两个主要功能，数据管理和用户管理。我们需要你能设计一个合适的数据库能够管理大量设备数据和用户数据。能够根据不同的用户和设备给出相应的查询结果。每次用户查询数据的时候能够实现自动的数据校准（你只要提供相应的接口，我们自己实现数据校准算法）。我们希望数据管理系统能够实现内容控制，例如能控制什么类型的用户（收费用户，免费用户）能够访问什么样的数据。
+以上是本项目的基本要求，我们希望你能提供具体的设计，比如用什么样的技术，具体的时间线等等。具体的细节后面可以开会讨论，但是希望你能根据我们的要求提供解决方案。有类似项目开发经验的优先。 
+
+
+
+
+1. 数据库有变动
+2. 小程序APIID有变动
+
+
+
+https：//item.taobao.com/item.htm？id=559273011721所示步进电机（蠕动泵） ，其转动速度是可变的，通过485通信可以实现。控制其转速变动的时间点，由另一个485通信数据实现。现在要求将两个变量集中的一个软件中，通过设定终点值，电机工作后重量（变量二变化） ，变随着影响电机转速，最后停止。此项目在单片机上已经非常成熟，现在主要工作要做出人机界面，将单片机的固定设置，改成可调整设置。
+
+
+openssl x509 -in scs1605101817024_dlxxjsh.top_server.crt -out scs1605101817024_dlxxjsh.top_server.pem -outform PE
+
+###  2021年05月18日
+-----------------------------------------------------------------
+
+包工供料开发费10w，提供三个成品；后期开发费以产品费形式返还，具体看产品量；单品供货价格需成品研发出后，经双方协商确定。
+
+
+
+目前，设计稿中的内容主要以国内内容为主，部分文字是中文，后期开发中，内容回全部替换掉；设计稿中主要提现布局，色彩，内容展示形式为主
+
+
+
+- openssl x509 -inform PEM -in 1_168.wlzhuanyun.com_bundle.crt > 1_168.wlzhuanyun.pem
+
+ws://168.wlzhuanyun.com/mqtt
+
+44c7a9b8-81ca-cad5-c189-675cea4c536f897f2e9b-6ced-4fa6-958a-6e04a02c8ba899dbd321-9f6b-73aa-d47e-623b746feb16
+
+
+
+http://localhost:9698/api/wechatshopinfo/doconsumptiontickets?amount=19.8&shopCode=1&ticketCode=Op6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQd3fa5c5f-048d-4f52-b945-159252eb935bOp6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQ
+
+
+
+Op6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQ670207da-9b79-421e-b6ce-90efbbf688f5Op6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQ
+
+
+
+http://localhost:9698/api/wechatshopinfo/doconsumptiontickets?amount=12&shopCode=3&ticketCode=Op6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQ670207da-9b79-421e-b6ce-90efbbf688f5Op6ImQEb2WhLHGzXzkqVnZxVzNMJ7XW9dLMQ&token=
+
+
+
+
+1、bpm系统生成的单据无法对外，因为bpm需要登录使用，而供方是不允许注册登录的，所以这个发送出去的单据需要单独生成；
+2、类似业务可能未来有扩展，我希望开发完后未来可以实现我们自定义单据和组织数据源；
+3、要允许对方上传附件，这个附件需存放于我服务器某处，其目的是bpm系统可以读取附件
+
+
+
+实现咱们的需求，从技术上讲，是可以实现的，具体还要看BPM系统技术支持的力度；
+
+如果BPM系统无法对外访问的话，只有通过拓展外部系统，同步BPM数据的方式实现咱们的功能需求，把内部数据调取出来展示问题应该不大，但是要回传数据到BPM系统的话，就要看BPM系统的技术支持了，包括BMP系统调阅附件的形式
+
+
+
+
+
+
+
+###  2021年05月17日
+-----------------------------------------------------------------
+
+网盘链接:
+链接: https://pan.baidu.com/s/1Yhq_7dP0MOayyEJ-g4_27A  密码: ute8
+
+备用链接:
+链接: https://pan.baidu.com/s/1qFTDOEZJaVDh2CMipDReLA  密码: sbrw
+
+无限速网盘链接：
+https://wws.lanzous.com/iKgg8o03caj 密码:bvf4
+
+
+###  2021年05月15日
+-----------------------------------------------------------------
+
+企业端：http://163.wlzhuanyun.com/ 
+商户端：http://126.wlzhuanyun.com/
+政府端：http://mp163.wlzhuanyun.com/ 
+登陆账户：admin
+登陆密码：adminn123
+
+
+
+
+
+
+###  2021年05月13日
+-----------------------------------------------------------------
+
+项目简介：运动场web管理系统，是让运动场馆的工作人员使用，实现管理会员、场馆预订、订单管理等功能。我们正在开发一个微信小程序，因此还需要考虑web后端管理系统与微信小程序的数据联动。
+1、需具有web前端和后端开发能力，有类似项目经验；
+2、数据是存在leancloud，所以需要了解leancloud的云开发模式；
+3、其中的会员卡功能，需要基于微信官方的卡券功能来做；
+4、我们会提供完整的UI设计稿，figma格式的视觉和交互文件；
+5、另外还需要为我们正在开发的小程序做支付和比赛抽签等后端接口。
+
+
+
+###  2021年05月10日
+-----------------------------------------------------------------
+
+经过我们团队内部重新评估开发以外的因素，主要影响因素为项目进度管理和项目文档管理、项目测试管理，对于这个项目我们大概两个思路，一个是把项目分拆成一个一个的项目，交付一个，再继续下一个，可以大家风险成本都可控，另外一个是整体报给我们，我们按照正常报价。
+报价人工每天1500，总计人工214个，约计200个人工，大约费用回在30万左右。
+
+
+
+
+###  2021年05月06日
+-----------------------------------------------------------------
+
+
+
+```bash
+hey -n 10000 -c 100 -m GET http://www.zbzhhgx.cn/
+```
+
+ 
+
+
+
+再确认一下最终大概需求，我们目前要开发的功能模块主要是（管理中台.xmind文档中）客户端APP、合作仓WMS接口、用户资金管理（不含提现）、客户管理、商品管理中心、OMS（自己的ERP库存接口）。
+
+
+
+如果以上需求确定的话，还是保持原来的报价，12.8万，工期大约2~2.5个月之间，合同签订后，首付60%，
+
+###  2021年02月28日
+-----------------------------------------------------------------
+
+
+
+```
+private static final InternalLogger logger = InternalLoggerFactory.getInstance(aaaaaa.class);
+
+logger.info
+
+```
+
+
+
+
+
+15            04               1E                  0E              06   0C  0D
+
+年（21）  月（04）  日（30）   时（14）  分（）   秒
+
+
+
+
+
+| 序号 | 项目   | 优点        | 缺点        |报价（万）         |
+| ---- | ------ | ------------ |------------ |------------ |
+| 01 | UniApp   | 一套代码可分别打包IOS，Android两套系统，可独立部署到硬件设备中，提供了开发效率，降低了开发成本 | 需要同时维护两套源代码；需要维护不同设备的兼容性；会丧失与底层硬件的交互部分灵活性 | 3.8 |
+| 02 | Android原生| 可深度与设备底层交互，灵活布局UI | 需要维护不同设备的兼容性；开发成本高，开发周期长 | 4.2 |
+| 03 | IOS原生   | 可深度与设备底层交互，灵活布局UI | 开发成本高，开发周期长 | 5.3 |
+| 04 | 小程序   | 不同设备不同机型兼容性高；小程序借助微信可以无缝兼容Android、IOS两大系统； | 会丧失与底层硬件的交互部分灵活性，不能单独部署到硬件设备中 | 2.98 |
+
+
+
+
+
+
+
+
+
+###  2021年02月27日
+
+-----------------------------------------------------------------
+
+
+1. 开发语言：java，数据库Mysql
+2. 技术要求：
+   英文版，H5，兼容手机端
+
+
+
+
+
+
+
+
+| 序号 | 功能   | 备注         |
+| ---- | ------ | ------------ |
+| 01 | 下行指令测试界面    | http://192.168.1.88:68/   |
+| 02 | 系统登陆界面    | http://192.168.1.88/， 用户名：admin，密码：dmin123|
+| 03 | 工控机登陆    | 用户名：administrator,密码：1     |
+
+
+
+
+```
+background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%);
+```
+
+
+
+宏祥德裕
+
+裕祥
+
+物兴连泽
+
+汇邦
+
+鑫航
+
+物联
+
+物通
+
+万顺通
+
+万通
+
+启网
+
+硕通
+
+硕旭
+
+
+
+母线电压测量
+
+FE 0B 01 01 15 02 02 02 02 02 02 02 02 02 02 02 02 02 81 03 E8 7E 01 00 00 07 FF 0A 06 00 55 AA 31 31 31 31 FF 00 00 00 FE 01 01 01 15 02 02 02 02 02 15 02 09 08 22 02 02 02 1F 40 00 00 94 A8 6E 85 90 8A 89 A2 B7 C0 BE B8 B8 B5 A8 94 83 73 6E 74 80 80 A1 9E A3 AF BC BF C2 BE B8 AB A2 92 80 7C 74 6F 74 7C 83 90 96 9D A5 A4 A6 A6 9F 9C 97 91 8C 89 88 8E 91 93 99 9C 9B A0 A0 9C 9D 9A 94 90 8D 88 87 8D 90 8F 94 9B 9F 9F A4 A7 A4 A0 A0 9C 9B 96 95 96 8F 93 94 96 99 9E 9B 9D A0 9F 9E 9C 9A 9A 97 96 9C 93 91 98 9E 96 95 93 98 A0 B0 A3 99 9E 97 96 92 7E 6F 81 7C 88 98 8F 92 9F 9D 9B A1 A8 AC A6 92 89 8F 94 93 7C 55 5B 6D 72 86 8B 90 C5 E8 E9 E4 E3 DE CF B1 88 5D 3A 1E 0E 0B 3C 70 94 B0 C4 D0 E3 EE F0 EC E2 D4 BE B2 BB C3 B3 7B 13 00 00 18 34 43 5A 79 92 AB C6 DD EF F8 F8 F3 EA D7 C0 A0 6A 31 10 02 00 14 2B 43 5C 82 A4 BE D0 DE E3 E4 E3 DC D4 C1 AA 94 7F 78 78 82 8F 96 A0 AF B4 BA BC BD B8 B1 A9 9E 94 88 87 87 89 91 94 98 A3 A8 AF B1 B0 B7 AF 7C 55 70 7F 5A 3E 4B 6C 81 7A 77 79 8B 9F A3 98 90 92 98 9B 98 9A A0 A8 AF B7 BA BB B8 B5 AF A9 A4 A1 98 91 96 98 EF FC F3 DF C7 9C 5B 47 47 41 4B 4B 58 75 8A 96 9B A1 AC B1 B5 BC B8 AD A8 A1 9E 9A 93 8C 86 84 8E 8E 93 98 94 95 9C 9C 9C 98 94 92 90 93 91 91 90 90 94 97 97 98 97 9C 9B 9C 9C A0 9B 9C 9F 9A 98 9B 97 90 90 8D 8C 89 85 86 85 84 85 8D 90 91 97 9E A0 A4 A8 A7 A6 A5 A4 9C 98 97 8E 8D 88 8C 85 8C 8E 93 9A 9A 9F A4 A0 A3 A4 A1 9C 9C 98 91 94 95 91 90 94 95 98 99 99 9A 98 93 91 93 8F 90 91 93 92 94 9B 96 85 88 94 90 84 84 8E 9B 9A 98 A2 AA B1 B3 A8 A6 A3 A0 98 7F 69 6E 78 8E A0 C0 E4 F2 EA DE C6 93 42 1E 02 1E 32 30 44 80 B0 BF CE C8 C0 B6 A8 7B 4B 28 00 59 72 C8 DD E8 DE DC E4 EF E9 E3 D0 A7 63 21 11 1F 34 4C 60 7B A5 C8 E2 FB FF FF FF FF F8 EB D2 AB 6E 3A 25 29 38 44 54 6C 87 98 A4 AB A8 9C 92 82 74 68 60 63 67 73 84 93 A1 AA B1 B6 B4 B3 AB A0 98 89 8B 8A 83 86 8F 94 A0 AC A3 BF BB BD C0 C0 BE BB B7 B3 B2 AE AF AC A8 A6 9E 9E 9F 98 95 90 86 82 7C 7B 7D 79 77 83 82 86 8C 91 94 98 9F A2 9D 9B A0 99 90 93 8F 86 88 8A 8C 8C 90 94 95 98 9A 9C 9E 9F 98 8E 7E 76 82 8E A8 D3 EC EE E9 E9 E7 D4 B0 7E 5B C0 FF FF FF F7 CF 54 00 00 20 00 00 00 00 00 04 4C A0 CC F3 FF FF FF FF FF FF DB A7 41 00 00 00 00 0F 25 52 81 A8 C8 E3 F2 FB FF FA F1 DF C8 AA 85 6A 66 6D 78 8D A7 B8 CA DA E1 E8 E8 E0 D3 BA 90 50 22 10 0C 10 2B 54 76 97 B8 CC DB E5 EA ED E9 E4 D9 CA C0 9F 69 69 73 5F 43 54 64 80 84 80 8F 9A A7 B0 B0 B0 B0 B6 AF 97 93 AA B1 C4 CA AF 8B 5E 2B 00 00 00 00 67 E3 FF FF FF FF FF FF FF FF FF FF FF FF D2 76 00 00 00 00 00 67 BB EC FF FF FF FF FF FF FF FE D9 A0 26 00 00 00 00 17 54 84 A8 C3 D3 D8 D6 CD BE A0 7A 42 30 16 11 0E 26 48 7D AC D0 EF FF FF FF FF FF FF FD E6 C5 95 45 22 0C 10 20 3D 56 70 8C 9C A8 B4 BC BD BB B4 AB A5 A1 A2 A0 9C 97 97 98 98 9D A3 A6 A4 A4 A8 A4 A1 A0 99 93 8C 88 8A 88 8F 95 9C A8 B3 BD C8 CC D2 C9 BA A7 9C 85 5B 40 44 53 51 4B 59 71 86 90 96 A0 AB B0 B8 B9 B7 B2 B4 B4 B0 B0 AC A6 A3 9B 93 8A 80 70 68 71 8B 96 B0 D7 ED E8 DE DD DB C3 94 55 56 5F 60 57 51 6A 93 A8 B4 B6 BE C3 BD AB 90 64 36 27 28 32 5C A1 CF E0 E3 DC DC D9 D6 CB B5 9B 6D 2E 18 20 31 4C 65 79 94 AB  25 7D A8
+
+环流故障
+
+FE 05 01 01 15 02 02 02 02 02 02 02 02 02 02 02 02 02 81 03 E8 7E 01 00 00 07 FF 0A 06 00 55 AA 31 31 31 31 FF 00 00 00 FE 01 01 01 15 02 02 02 02 02 15 02 09 08 22 02 02 02 1F 40 00 00 94 A8 6E 85 90 8A 89 A2 B7 C0 BE B8 B8 B5 A8 94 83 73 6E 74 80 80 A1 9E A3 AF BC BF C2 BE B8 AB A2 92 80 7C 74 6F 74 7C 83 90 96 9D A5 A4 A6 A6 9F 9C 97 91 8C 89 88 8E 91 93 99 9C 9B A0 A0 9C 9D 9A 94 90 8D 88 87 8D 90 8F 94 9B 9F 9F A4 A7 A4 A0 A0 9C 9B 96 95 96 8F 93 94 96 99 9E 9B 9D A0 9F 9E 9C 9A 9A 97 96 9C 93 91 98 9E 96 95 93 98 A0 B0 A3 99 9E 97 96 92 7E 6F 81 7C 88 98 8F 92 9F 9D 9B A1 A8 AC A6 92 89 8F 94 93 7C 55 5B 6D 72 86 8B 90 C5 E8 E9 E4 E3 DE CF B1 88 5D 3A 1E 0E 0B 3C 70 94 B0 C4 D0 E3 EE F0 EC E2 D4 BE B2 BB C3 B3 7B 13 00 00 18 34 43 5A 79 92 AB C6 DD EF F8 F8 F3 EA D7 C0 A0 6A 31 10 02 00 14 2B 43 5C 82 A4 BE D0 DE E3 E4 E3 DC D4 C1 AA 94 7F 78 78 82 8F 96 A0 AF B4 BA BC BD B8 B1 A9 9E 94 88 87 87 89 91 94 98 A3 A8 AF B1 B0 B7 AF 7C 55 70 7F 5A 3E 4B 6C 81 7A 77 79 8B 9F A3 98 90 92 98 9B 98 9A A0 A8 AF B7 BA BB B8 B5 AF A9 A4 A1 98 91 96 98 EF FC F3 DF C7 9C 5B 47 47 41 4B 4B 58 75 8A 96 9B A1 AC B1 B5 BC B8 AD A8 A1 9E 9A 93 8C 86 84 8E 8E 93 98 94 95 9C 9C 9C 98 94 92 90 93 91 91 90 90 94 97 97 98 97 9C 9B 9C 9C A0 9B 9C 9F 9A 98 9B 97 90 90 8D 8C 89 85 86 85 84 85 8D 90 91 97 9E A0 A4 A8 A7 A6 A5 A4 9C 98 97 8E 8D 88 8C 85 8C 8E 93 9A 9A 9F A4 A0 A3 A4 A1 9C 9C 98 91 94 95 91 90 94 95 98 99 99 9A 98 93 91 93 8F 90 91 93 92 94 9B 96 85 88 94 90 84 84 8E 9B 9A 98 A2 AA B1 B3 A8 A6 A3 A0 98 7F 69 6E 78 8E A0 C0 E4 F2 EA DE C6 93 42 1E 02 1E 32 30 44 80 B0 BF CE C8 C0 B6 A8 7B 4B 28 00 59 72 C8 DD E8 DE DC E4 EF E9 E3 D0 A7 63 21 11 1F 34 4C 60 7B A5 C8 E2 FB FF FF FF FF F8 EB D2 AB 6E 3A 25 29 38 44 54 6C 87 98 A4 AB A8 9C 92 82 74 68 60 63 67 73 84 93 A1 AA B1 B6 B4 B3 AB A0 98 89 8B 8A 83 86 8F 94 A0 AC A3 BF BB BD C0 C0 BE BB B7 B3 B2 AE AF AC A8 A6 9E 9E 9F 98 95 90 86 82 7C 7B 7D 79 77 83 82 86 8C 91 94 98 9F A2 9D 9B A0 99 90 93 8F 86 88 8A 8C 8C 90 94 95 98 9A 9C 9E 9F 98 8E 7E 76 82 8E A8 D3 EC EE E9 E9 E7 D4 B0 7E 5B C0 FF FF FF F7 CF 54 00 00 20 00 00 00 00 00 04 4C A0 CC F3 FF FF FF FF FF FF DB A7 41 00 00 00 00 0F 25 52 81 A8 C8 E3 F2 FB FF FA F1 DF C8 AA 85 6A 66 6D 78 8D A7 B8 CA DA E1 E8 E8 E0 D3 BA 90 50 22 10 0C 10 2B 54 76 97 B8 CC DB E5 EA ED E9 E4 D9 CA C0 9F 69 69 73 5F 43 54 64 80 84 80 8F 9A A7 B0 B0 B0 B0 B6 AF 97 93 AA B1 C4 CA AF 8B 5E 2B 00 00 00 00 67 E3 FF FF FF FF FF FF FF FF FF FF FF FF D2 76 00 00 00 00 00 67 BB EC FF FF FF FF FF FF FF FE D9 A0 26 00 00 00 00 17 54 84 A8 C3 D3 D8 D6 CD BE A0 7A 42 30 16 11 0E 26 48 7D AC D0 EF FF FF FF FF FF FF FD E6 C5 95 45 22 0C 10 20 3D 56 70 8C 9C A8 B4 BC BD BB B4 AB A5 A1 A2 A0 9C 97 97 98 98 9D A3 A6 A4 A4 A8 A4 A1 A0 99 93 8C 88 8A 88 8F 95 9C A8 B3 BD C8 CC D2 C9 BA A7 9C 85 5B 40 44 53 51 4B 59 71 86 90 96 A0 AB B0 B8 B9 B7 B2 B4 B4 B0 B0 AC A6 A3 9B 93 8A 80 70 68 71 8B 96 B0 D7 ED E8 DE DD DB C3 94 55 56 5F 60 57 51 6A 93 A8 B4 B6 BE C3 BD AB 90 64 36 27 28 32 5C A1 CF E0 E3 DC DC D9 D6 CB B5 9B 6D 2E 18 20 31 4C 65 79 94 AB C3 6A A8
+
+
+
+
+
+
+
+
+
+DE E3 E4 E3 DC D4 C1 AA 94 7F 78 78 82 8F 96 A0 AF B4 BA BC BD B8 B1 A9 9E 94 88 87 87 89 91 94 98 A3 A8 AF B1 B0 B7 AF 7C 55 70 7F 5A 3E 4B 6C 81 7A 77 79 8B 9F A3 98 90 92 98 9B 98 9A A0 A8 AF B7 BA BB B8 B5 AF A9 A4 A1 98 91 96 98 EF FC F3 DF C7 9C 5B 47 47 41 4B 4B 58 75 8A 96 9B A1 AC B1 B5 BC B8 AD A8 A1 9E 9A 93 8C 86 84 8E 8E 93 98 94 95 9C 9C 9C 98 94 92 90 93 91 91 90 90 94 97 97 98 97 9C 9B 9C 9C A0 9B 9C 9F 9A 98 9B 97 90 90 8D 8C 89 85 86 85 84 85 8D 90 91 97 9E A0 A4 A8 A7 A6 A5 A4 9C 98 97 8E 8D 88 8C 85 8C 8E 93 9A 9A 9F A4 A0 A3 A4 A1 9C 9C 98 91 94 95 91 90 94 95 98 99 99 9A 98 93 91 93 8F 90 91 93 92 94 9B 96 85 88 94 90 84 84 8E 9B 9A 98 A2 AA B1 B3 A8 A6 A3 A0 98 7F 69 6E 78 8E A0 C0 E4 F2 EA DE C6 93 42 1E 02 1E 32 30 44 80 B0 BF CE C8 C0 B6 A8 7B 4B 28 00 59 72 C8 DD E8 DE DC E4 EF E9 E3 D0 A7 63 21 11 1F 34 4C 60 7B A5 C8 E2 FB FF FF FF FF F8 EB D2 AB 6E 3A 25 29 38 44 54 6C 87 98 A4 AB A8 9C 92 82 74 68 60 63 67 73 84 93 A1 AA B1 B6 B4 B3 AB A0 98 89 8B 8A 83 86 8F 94 A0 AC A3 BF BB BD C0 C0 BE BB B7 B3 B2 AE AF AC A8 A6 9E 9E 9F 98 95 90 86 82 7C 7B 7D 79 77 83 82 86 8C 91 94 98 9F A2 9D 9B A0 99 90 93 8F 86 88 8A 8C 8C 90 94 95 98 9A 9C 9E 9F 98 8E 7E 76 82 8E A8 D3 EC EE E9 E9 E7 D4 B0 7E 5B C0 FF FF FF F7 CF 54 00 00 20 00 00 00 00 00 04 4C A0 CC F3 FF FF FF FF FF FF DB A7 41 00 00 00 00 0F 25 52 81 A8 C8 E3 F2 FB FF FA F1 DF C8 AA 85 6A 66 6D 78 8D A7 B8 CA DA E1 E8 E8 E0 D3 BA 90 50 22 10 0C 10 2B 54 76 97 B8 CC DB E5 EA ED E9 E4 D9 CA C0 9F 69 69 73 5F 43 54 64 80 84 80 8F 9A A7 B0 B0 B0 B0 B6 AF 97 93 AA B1 C4 CA AF 8B 5E 2B 00 00 00 00 67 E3 FF FF FF FF FF FF FF FF FF FF FF FF D2 76 00 00 00 00 00 67 BB EC FF FF FF FF FF FF FF FE D9 A0 26 00 00 00 00 17 54 84 A8 C3 D3 D8 D6 CD BE A0 7A 42 30 16 11 0E 26 48 7D AC D0 EF FF FF FF FF FF FF FD E6 C5 95 45 22 0C 10 20 3D 56 70 8C 9C A8 B4 BC BD BB B4 AB A5 A1 A2 A0 9C 97 97 98 98 9D A3 A6 A4 A4 A8 A4 A1 A0 99 93 8C 88 8A 88 8F 95 9C A8 B3 BD C8 CC D2 C9 BA A7 9C 85 5B 40 44 53 51 4B 59 71 86 90 96 A0 AB B0 B8 B9 B7 B2 B4 B4 B0 B0 AC A6 A3 9B 93 8A 80 70 68 71 8B 96 B0 D7 ED E8 DE DD DB C3 94 55 56 5F 60 57 51 6A 93 A8 B4 B6 BE C3 BD AB 90 64 36 27 28 32 5C A1 CF E0 E3 DC DC D9 D6 CB B5 9B 6D 2E 18 20 31 4C 65 79 94 AB 37 65 A8
+
+
+
+
+
+
+
+FE 01 01 01 15 02 02 02 02 02 02 02 02 02 02 02 02 02 81 03 E8 7E 01 00 00 07 FF 0A 06 00 55 AA 31 31 31 31 FF 00 00 00 FE 01 01 01 15 02 02 02 02 02 15 02 09 08 22 02 02 02 1F 40 00 00 94 A8 6E 85 90 8A 89 A2 B7 C0 BE B8 B8 B5 A8 94 83 73 6E 74 80 80 A1 9E A3 AF BC BF C2 BE B8 AB A2 92 80 7C 74 6F 74 7C 83 90 96 9D A5 A4 A6 A6 9F 9C 97 91 8C 89 88 8E 91 93 99 9C 9B A0 A0 9C 9D 9A 94 90 8D 88 87 8D 90 8F 94 9B 9F 9F A4 A7 A4 A0 A0 9C 9B 96 95 96 8F 93 94 96 99 9E 9B 9D A0 9F 9E 9C 9A 9A 97 96 9C 93 91 98 9E 96 95 93 98 A0 B0 A3 99 9E 97 96 92 7E 6F 81 7C 88 98 8F 92 9F 9D 9B A1 A8 AC A6 92 89 8F 94 93 7C 55 5B 6D 72 86 8B 90 C5 E8 E9 E4 E3 DE CF B1 88 5D 3A 1E 0E 0B 3C 70 94 B0 C4 D0 E3 EE F0 EC E2 D4 BE B2 BB C3 B3 7B 13 00 00 18 34 43 5A 79 92 AB C6 DD EF F8 F8 F3 EA D7 C0 A0 6A 31 10 02 00 14 2B 43 5C 82 A4 BE D0 DE E3 E4 E3 DC D4 C1 AA 94 7F 78 78 82 8F 96 A0 AF B4 BA BC BD B8 B1 A9 9E 94 88 87 87 89 91 94 98 A3 A8 AF B1 B0 B7 AF 7C 55 70 7F 5A 3E 4B 6C 81 7A 77 79 8B 9F A3 98 90 92 98 9B 98 9A A0 A8 AF B7 BA BB B8 B5 AF A9 A4 A1 98 91 96 98 EF FC F3 DF C7 9C 5B 47 47 41 4B 4B 58 75 8A 96 9B A1 AC B1 B5 BC B8 AD A8 A1 9E 9A 93 8C 86 84 8E 8E 93 98 94 95 9C 9C 9C 98 94 92 90 93 91 91 90 90 94 97 97 98 97 9C 9B 9C 9C A0 9B 9C 9F 9A 98 9B 97 90 90 8D 8C 89 85 86 85 84 85 8D 90 91 97 9E A0 A4 A8 A7 A6 A5 A4 9C 98 97 8E 8D 88 8C 85 8C 8E 93 9A 9A 9F A4 A0 A3 A4 A1 9C 9C 98 91 94 95 91 90 94 95 98 99 99 9A 98 93 91 93 8F 90 91 93 92 94 9B 96 85 88 94 90 84 84 8E 9B 9A 98 A2 AA B1 B3 A8 A6 A3 A0 98 7F 69 6E 78 8E A0 C0 E4 F2 EA DE C6 93 42 1E 02 1E 32 30 44 80 B0 BF CE C8 C0 B6 A8 7B 4B 28 00 59 72 C8 DD E8 DE DC E4 EF E9 E3 D0 A7 63 21 11 1F 34 4C 60 7B A5 C8 E2 FB FF FF FF FF F8 EB D2 AB 6E 3A 25 29 38 44 54 6C 87 98 A4 AB A8 9C 92 82 74 68 60 63 67 73 84 93 A1 AA B1 B6 B4 B3 AB A0 98 89 8B 8A 83 86 8F 94 A0 AC A3 BF BB BD C0 C0 BE BB B7 B3 B2 AE AF AC A8 A6 9E 9E 9F 98 95 90 86 82 7C 7B 7D 79 77 83 82 86 8C 91 94 98 9F A2 9D 9B A0 99 90 93 8F 86 88 8A 8C 8C 90 94 95 98 9A 9C 9E 9F 98 8E 7E 76 82 8E A8 D3 EC EE E9 E9 E7 D4 B0 7E 5B C0 FF FF FF F7 CF 54 00 00 20 00 00 00 00 00 04 4C A0 CC F3 FF FF FF FF FF FF DB A7 41 00 00 00 00 0F 25 52 81 A8 C8 E3 F2 FB FF FA F1 DF C8 AA 85 6A 66 6D 78 8D A7 B8 CA DA E1 E8 E8 E0 D3 BA 90 50 22 10 0C 10 2B 54 76 97 B8 CC DB E5 EA ED E9 E4 D9 CA C0 9F 69 69 73 5F 43 54 64 80 84 80 8F 9A A7 B0 B0 B0 B0 B6 AF 97 93 AA B1 C4 CA AF 8B 5E 2B 00 00 00 00 67 E3 FF FF FF FF FF FF FF FF FF FF FF FF D2 76 00 00 00 00 00 67 BB EC FF FF FF FF FF FF FF FE D9 A0 26 00 00 00 00 17 54 84 A8 C3 D3 D8 D6 CD BE A0 7A 42 30 16 11 0E 26 48 7D AC D0 EF FF FF FF FF FF FF FD E6 C5 95 45 22 0C 10 20 3D 56 70 8C 9C A8 B4 BC BD BB B4 AB A5 A1 A2 A0 9C 97 97 98 98 9D A3 A6 A4 A4 A8 A4 A1 A0 99 93 8C 88 8A 88 8F 95 9C A8 B3 BD C8 CC D2 C9 BA A7 9C 85 5B 40 44 53 51 4B 59 71 86 90 96 A0 AB B0 B8 B9 B7 B2 B4 B4 B0 B0 AC A6 A3 9B 93 8A 80 70 68 71 8B 96 B0 D7 ED E8 DE DD DB C3 94 55 56 5F 60 57 51 6A 93 A8 B4 B6 BE C3 BD AB 90 64 36 27 28 32 5C A1 CF E0 E3 DC DC D9 D6 CB B5 9B 6D 2E 18 20 31 4C 65 79 94 AB 37 65 A8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"deviceAddr":"00","dataLength":240,"fields":[18.7,25.9,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"command":"03"}
+
+
+
+```
+WeChatShopInfoLogin login = JSONObject.parseObject(param, WeChatShopInfoLogin.class);
+```
+
+
+
+startPage();
+TicketsUseLog log = new TicketsUseLog();
+log.setCshopcode(shopCode);
+List<TicketsUseLog> lists = ticketsUseLogService.selectTicketsUseLogList(log);
+List<WeChatTicketsUseLog> ticketsUseLogList = new ArrayList<WeChatTicketsUseLog>();
+for (TicketsUseLog ticketsUseLog : lists) {
+    WeChatTicketsUseLog wechatLog = new WeChatTicketsUseLog();
+    wechatLog.setId(ticketsUseLog.getId());
+    wechatLog.setCuserid(ticketsUseLog.getCuserid());
+    wechatLog.setCshopcode(ticketsUseLog.getCshopcode());
+    wechatLog.setCshopname(ticketsUseLog.getCshopname());
+    wechatLog.setCticketcode(ticketsUseLog.getCticketcode());
+    wechatLog.setIamount(ticketsUseLog.getIamount());
+    wechatLog.setDusedate(ticketsUseLog.getDusedate());
+    JobSeekerUser jobSeekerUser = jobSeekerUserService.selectJobSeekerUserById(Long.valueOf(ticketsUseLog.getCuserid()).longValue());
+    if (jobSeekerUser != null) {
+        wechatLog.setCidcode(jobSeekerUser.getCidcode());
+        wechatLog.setCjobsktel(jobSeekerUser.getCjobsktel());
+        wechatLog.setCname(jobSeekerUser.getCname());
+        wechatLog.setCuniversity(jobSeekerUser.getCuniversity());
+    }
+    ticketsUseLogList.add(wechatLog);
+}
+// TODO 获取青年驿站消费列表
+return getDataTable(ticketsUseLogList);
+}
+
+
+
+wx601843f7b1559b77
+
+```
+
+    startPage();
+    TicketsUseLog log = new TicketsUseLog();
+    log.setCshopcode(shopCode);
+    List<TicketsUseLog> lists = ticketsUseLogService.selectTicketsUseLogList(log);
+    List<WeChatTicketsUseLog> ticketsUseLogList = new ArrayList<WeChatTicketsUseLog>();
+    for (TicketsUseLog ticketsUseLog : lists) {
+        WeChatTicketsUseLog wechatLog = new WeChatTicketsUseLog();
+        wechatLog.setId(ticketsUseLog.getId());
+        wechatLog.setCuserid(ticketsUseLog.getCuserid());
+        wechatLog.setCshopcode(ticketsUseLog.getCshopcode());
+        wechatLog.setCshopname(ticketsUseLog.getCshopname());
+        wechatLog.setCticketcode(ticketsUseLog.getCticketcode());
+        wechatLog.setIamount(ticketsUseLog.getIamount());
+        wechatLog.setDusedate(ticketsUseLog.getDusedate());
+        JobSeekerUser jobSeekerUser = jobSeekerUserService.selectJobSeekerUserById(Long.valueOf(ticketsUseLog.getCuserid()).longValue());
+        if (jobSeekerUser != null) {
+            wechatLog.setCidcode(jobSeekerUser.getCidcode());
+            wechatLog.setCjobsktel(jobSeekerUser.getCjobsktel());
+            wechatLog.setCname(jobSeekerUser.getCname());
+            wechatLog.setCuniversity(jobSeekerUser.getCuniversity());
+        }
+        ticketsUseLogList.add(wechatLog);
+    }
+    // TODO 获取青年驿站消费列表
+    return getDataTable(ticketsUseLogList);
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###  2021年02月15日
 -----------------------------------------------------------------
+
+
+
+00030655007854A1 
+
+
+
+《OpenCV最新中文版官方教程》
+链接：https://pan.baidu.com/s/19f0lq7Zhk3cyhGeZyJ01dQ 
+提取码：cbjo
+《PyTorch中文版官方教程》
+链接:https://pan.baidu.com/s/1wf01h90YnXgw059YfnZzUQ  
+提取码:6e2b
+
+
+
+
+
+FE01001815020202020202020202020202028203E873727171707070717272727273737575767777777776757372716F6F6E6D6D6D6D6E6F70717272727171707070707173737474737371706E6D6B6B6C6D6F71727374757576757575757575757677787979797978777573716F6E6D6D6D6D6D6D6D6D6D6D6D6E6E6F6F7172747677777776757473706E6C6B6B6B6D6E6F71727375757675757575767778797979797978777573716F6D6C6B6C6D6D6B6D6F7172706D6B6C6F71737473727373727170707071716F6D6D6D6F717171717171737575747474747577797979787777777674726F6D6C6D6D6E6E6F6F717271707070717373727272727272717173737372716F6D6B6C6E6F717373747475767776757373737475767677777777757473716F6F6F6E6F6F6F6F707070706F6F6F6F6F6F6F7071717373737372727171706F6F6F6F6F717273747575757575777D89969D9C93887D736B6255483F3F4B5F75899395928D877E736559514F55616D767C7D7B77736D665F5956575B62696F7477797B7B7B7A7977787A7C7E807F7D7B7774726F6E6D6D6E71737677777573716F6E6D6D6D6F70737678797A79777573716E6C6A6969686969696B6C6F716B5B4B4F637A7D746E74818E959385725F55545B616465697585949B97897768615F606162656C77848F9390887C736D6966636162656B71767876736F6E6F717273737375767675716D6A68686A6E7275777879797978767572706E6F7174777878777573716D6B6B6D6F71727373727172747575737371717171716F6F6F6F7071717171727373737372706F6F71727375757676767675737271706F6F70707172737373737372717170707071717273737475747473737271717171717273737373747474737373727272727272737373737373737272727272737373727373737373737372727373737373737474757575747473737372717172717273737373737373737272727171717071717273737372717172737575747577797976726F6F7173757574737374737372717172737271717173747575737271727373737272727374757574737272737373737373737475757575757575757575757473737373727271717171717171727373737373747475757575757473747373737373737373737171717375757474737373727273757676767573716F6F7171727271727373757573737171717272727373737575757473737272737373737373747474747473737372727272737373737473747474747473737373737373737374757574747374747576777877777776757472716F6F6D6D6E6F6F7171727271717171717373747576767575737371706E6D6C6D6D6F7173757678797A7A797776757575777778787979797876757676736F6B696A6D7071716F6F099AA8757473737373727271717171717171727373737373747475757575757473747373737373737373737171717375757474737373727273757676767573716F6F7171727271727373757573737171717272727373737575757473737272737373737373747474747473737372727272737373737473747474747473737373737373737374757574747374747576777877777776757472716F6F6D6D6E6F6F7171727271717171717373747576767575737371706E6D6C6D6D6F7173757678797A7A797776757575777778787979797876757676736F6B696A6D7071716F6F099AA8
+
+
+
+
+
+TK92qLDxXyzTfdGQ
+
+
+
+启用专业物联网平台的解决方案
+
+1. 成本降低了，对专业的技术人才要求提高了
+2. 产品的开发难度降低了，结构化成本的控制难度提高了
+3. 产品变现容易了，产品商业化难度提高了。
+
+
 
 
 
